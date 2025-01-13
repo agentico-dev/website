@@ -1,0 +1,9 @@
+agentic:
+  label: Agentic AI
+  permalink: /agentic-ai
+  description: Agentic AI is a term to describe the AI that can act autonomously and make decisions on its own.
+
+mcp:
+  label: MCP
+  permalink: /mcp
+  description: Model Context Protolol (MCP) is a protocol that allows AI models to communicate with each other.
