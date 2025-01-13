@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'agentico', // Usually your GitHub org/user name.
-  projectName: 'agentico-dev', // Usually your repo name.
+  organizationName: 'agentico-dev', // Usually your GitHub org/user name.
+  projectName: 'website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
