@@ -2,7 +2,7 @@
 slug: first-blog-post
 title: First Blog Post
 authors: [adrian]
-tags: [hola, agentic ai]
+tags: [agentic]
 ---
 
 Lorem ipsum dolor sit amet...

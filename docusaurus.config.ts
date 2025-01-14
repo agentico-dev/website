@@ -4,6 +4,11 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// Hubspot account id
+const hubspot = {
+  accountId: '21339207',
+};
+
 const config: Config = {
   title: 'Agentico',
   tagline: 'Where AI Meets Simplicity',
@@ -51,6 +56,21 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        gtag: {
+          trackingID: 'G-YH16LCH8PT',
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const { defaultCreateSitemapItems, ...rest } = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
         },
       } satisfies Preset.Options,
     ],
@@ -101,16 +121,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/agentico',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/agentico',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/agentico',
+              href: 'https://discord.gg/xg3VrsAc',
             },
           ],
         },
@@ -135,6 +147,24 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  scripts: [
+    {
+      src: 'https://js.hsforms.net/forms/embed/v2.js',
+      async: true,
+    },
+  ],
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {
+        async: "true",
+        defer: "true",
+        type: 'text/javascript',
+        id: 'hs-script-loader',
+        src: `//js.hs-scripts.com/${hubspot.accountId}.js`,
+      },
+    },
+  ],
 };
 
 export default config;
