@@ -1,0 +1,8 @@
+{
+  "label": "Quickstart Guides",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Guides that take less than 5 minutes to learn the most important Agentico concepts."
+  }
+}
