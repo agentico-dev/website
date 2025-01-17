@@ -19,4 +19,4 @@ If you have any questions or need help, feel free to reach out to us on our [Git
 ## Stay tuned
 
 * Subscribe to our [YouTube channel](https://go.rebelion.la/la-rebelion-tube) to watch tutorials and guides on how to improve and simplify your DevOps processes.
-* Follow us on [LinkedIn](linkedin.com/company/larebelion-labs) to stay up to date with the latest news and updates from [La Rebelion](https://rebelion.la). We are always working on new ideas and improvements to make your life easier.
+* Follow us on [LinkedIn](https://linkedin.com/company/larebelion-labs) to stay up to date with the latest news and updates from [La Rebelion](https://rebelion.la). We are always working on new ideas and improvements to make your life easier.
