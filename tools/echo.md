@@ -1,7 +1,11 @@
 ---
-layout: default
 title: Echo
-permalink: /tools/echo
+authors:
+  - larebelion
+tags:
+  - Mock
 ---
 
 Simple tool that echoes input messages.
+
+<!-- truncate -->

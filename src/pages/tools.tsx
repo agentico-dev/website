@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import ToolsCatalog from '@site/src/components/ToolsCatalog';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
@@ -32,11 +32,11 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Tools from ${siteConfig.title}`}
+      title={`Agentic AI Tools`}
       description="Choose the right tool for your agent's task">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <ToolsCatalog />
       </main>
     </Layout>
   );

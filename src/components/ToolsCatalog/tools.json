@@ -1,0 +1,186 @@
+[
+  {
+    "title": "Echo Tool",
+    "name": "echo",
+    "description": "A tool that echoes the input message.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://agentico.dev/tools",
+    "repository": "https://github.com/agentico-dev/echo-tool",
+    "license": "MIT",
+    "category": "Communication",
+    "skills": []
+  },
+  {
+    "title": "Create Microservices Kubernetes-based project",
+    "name": "init-project",
+    "description": "A tool that creates a new project with a microservices architecture using Kubernetes.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://k1s.sh/drift-detection",
+    "repository": "https://github.com/la-rebelion/k1s-init-project",
+    "license": "MIT",
+    "category": "Developer Tools",
+    "skills": ["Kubernetes", "Microservices", "Software Development", "Helm"]
+  },
+  {
+    "title": "Drift Detection Tool",
+    "name": "drift-detection",
+    "description": "A tool that detects drift in a Kubernetes deployment.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://k1s.sh/drift-detection",
+    "repository": "https://github.com/la-rebelion/k1s-drift-detection",
+    "license": "MIT",
+    "category": "DevOps Tools",
+    "skills": ["Kubernetes", "Software Development", "Helm", "Continuous Integration", "Continuous Deployment", "Configuration Management"]
+  },
+  {
+    "title": "Kubernetes Resource Viewer Tool",
+    "name": "k8s-resource-viewer",
+    "description": "A tool that visualizes Kubernetes resources in a cluster.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://k1s.sh",
+    "repository": "https://github.com/la-rebelion/k1s-resource-viewer",
+    "license": "MIT",
+    "category": "DevOps Tools",
+    "skills": ["Kubernetes", "DevOps"]
+  },
+  {
+    "title": "Troubleshooter Tool",
+    "name": "troubleshooter",
+    "description": "A tool that helps to identify common issues and troubleshoot them.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://k1s.sh",
+    "repository": "https://github.com/la-rebelion/k1s-troubleshooter",
+    "license": "MIT",
+    "category": "DevOps Tools",
+    "skills": ["Troubleshooting", "DevOps", "Logging", "Monitoring"]
+  },
+  {
+    "title": "Translate Tool",
+    "name": "translate",
+    "description": "A tool that translates text from one language to another.",
+    "author": {
+      "name": "Adrian Escutia",
+      "url": "https://escutia.me/adrian"
+    },
+    "homepage": "https://agentico.dev/tools/translate",
+    "repository": "https://github.com/agentico-dev/translate",
+    "bugs": "https://github.com/agentico-dev/translate/issues",
+    "license": "Apache-2.0",
+    "category": "Developer Tools",
+    "skills": ["Translate"]
+  },
+  {
+    "title": "Sentiment Analysis Tool",
+    "name": "sentiment-analysis",
+    "description": "A tool that analyzes the sentiment of a given text.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://agentico.dev/tools/sentiment-analysis",
+    "repository": "https://github.com/agentico-dev/sentiment-analysis",
+    "bugs": "https://github.com/agentico-dev/sentiment-analysis/issues",
+    "license": "GPL-3.0",
+    "category": "Developer Tools",
+    "skills": ["Sentiment Analysis", "Natural Language Processing", "Machine Learning"]
+  },
+  {
+    "title": "Weather Tool",
+    "name": "weather",
+    "description": "A tool that provides weather information for a given location.",
+    "author": {
+      "name": "Adrian Escutia",
+      "url": "https://escutia.me/adrian"
+    },
+    "homepage": "https://agentico.dev/tools/weather",
+    "repository": "https://github.com/agentico-dev/weather",
+    "license": "MIT",
+    "category": "Developer Tools",
+    "skills": ["Weather"]
+  },
+  {
+    "title": "Image Resizer Tool",
+    "name": "image-resizer",
+    "description": "A tool that resizes images to a specified width and height.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://agentico.dev/tools/image-resizer",
+    "repository": "https://github.com/agentico-dev/image-resizer",
+    "license": "MIT",
+    "category": "Developer Tools",
+    "skills": ["Image Processing", "Image Resizing"]
+  },
+  {
+    "title": "QR Code Generator Tool",
+    "name": "qr-code-generator",
+    "description": "A tool that generates QR codes for a given text or URL.",
+    "author": {
+      "name": "Adrian Escutia",
+      "url": "https://escutia.me/adrian"
+    },
+    "homepage": "https://agentico.dev/tools/qr-code-generator",
+    "repository": "https://github.com/agentico-dev/qr-code-generator",
+    "license": "MIT",
+    "category": "Developer Tools",
+    "skills": ["QR Codes", "Image Processing"]
+  },
+  {
+    "title": "Password Generator Tool",
+    "name": "password-generator",
+    "description": "A tool that generates secure passwords.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://agentico.dev/tools/password-generator",
+    "repository": "https://github.com/agentico-dev/password-generator",
+    "license": "MIT",
+    "category": "Security",
+    "skills": ["Password Generation", "Security"]
+  },
+  {
+    "title": "Search JIRA issues using JQL",
+    "name": "jira-search",
+    "description": "A tool that searches JIRA issues using JQL (max. 50 results per query).",
+    "author": {
+      "name": "Adrian Escutia",
+      "url": "https://escutia.me/adrian"
+    },
+    "homepage": "https://agentico.dev/tools/jira-search",
+    "repository": "https://github.com/agentico-dev/jira-search",
+    "license": "MIT",
+    "category": "Developer Tools",
+    "skills": ["JIRA", "JQL", "Software Development", "Issue Tracking"]
+  },
+  {
+    "title": "Track issue relationships in JIRA",
+    "name": "jira-issue-tracker",
+    "description": "A tool that tracks issue relationships in JIRA (mentions, blocks, links, epics).",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://agentico.dev/tools/jira-issue-tracker",
+    "repository": "https://github.com/agentico-dev/jira-issue-tracker",
+    "license": "MIT",
+    "category": "Developer Tools",
+    "skills": ["JIRA", "Issue Tracking", "Software Development"]
+  }
+]
