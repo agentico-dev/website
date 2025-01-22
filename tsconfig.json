@@ -2,7 +2,13 @@
   // This file is not used in compilation. It is here just for a nice editor experience.
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@modelcontextprotocol/server-github/*": ["./node_modules/@modelcontextprotocol/server-github/*"],
+    },
+    "declaration": true,
+    "declarationDir": "./types",
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
   "exclude": [".docusaurus", "build"]
 }

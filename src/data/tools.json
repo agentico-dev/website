@@ -1,0 +1,16 @@
+{
+  "echo": {
+    "title": "Echo Tool",
+    "name": "echo",
+    "description": "A tool that echoes the input message.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://agentico.dev/tools",
+    "repository": "https://github.com/agentico-dev/echo-tool",
+    "license": "MIT",
+    "category": "Communication",
+    "skills": []
+  }
+}

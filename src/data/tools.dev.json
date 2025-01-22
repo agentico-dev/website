@@ -1,5 +1,5 @@
-[
-  {
+{
+  "echo": {
     "title": "Echo Tool",
     "name": "echo",
     "description": "A tool that echoes the input message.",
@@ -13,7 +13,7 @@
     "category": "Communication",
     "skills": []
   },
-  {
+  "init-project": {
     "title": "Create Microservices Kubernetes-based project",
     "name": "init-project",
     "description": "A tool that creates a new project with a microservices architecture using Kubernetes.",
@@ -27,7 +27,7 @@
     "category": "Developer Tools",
     "skills": ["Kubernetes", "Microservices", "Software Development", "Helm"]
   },
-  {
+  "drift-detection": {
     "title": "Drift Detection Tool",
     "name": "drift-detection",
     "description": "A tool that detects drift in a Kubernetes deployment.",
@@ -41,7 +41,7 @@
     "category": "DevOps Tools",
     "skills": ["Kubernetes", "Software Development", "Helm", "Continuous Integration", "Continuous Deployment", "Configuration Management"]
   },
-  {
+  "k8s-resource-viewer": {
     "title": "Kubernetes Resource Viewer Tool",
     "name": "k8s-resource-viewer",
     "description": "A tool that visualizes Kubernetes resources in a cluster.",
@@ -55,7 +55,7 @@
     "category": "DevOps Tools",
     "skills": ["Kubernetes", "DevOps"]
   },
-  {
+  "troubleshooter": {
     "title": "Troubleshooter Tool",
     "name": "troubleshooter",
     "description": "A tool that helps to identify common issues and troubleshoot them.",
@@ -69,7 +69,7 @@
     "category": "DevOps Tools",
     "skills": ["Troubleshooting", "DevOps", "Logging", "Monitoring"]
   },
-  {
+  "translate": {
     "title": "Translate Tool",
     "name": "translate",
     "description": "A tool that translates text from one language to another.",
@@ -84,7 +84,7 @@
     "category": "Developer Tools",
     "skills": ["Translate"]
   },
-  {
+  "sentiment-analysis":{
     "title": "Sentiment Analysis Tool",
     "name": "sentiment-analysis",
     "description": "A tool that analyzes the sentiment of a given text.",
@@ -99,7 +99,7 @@
     "category": "Developer Tools",
     "skills": ["Sentiment Analysis", "Natural Language Processing", "Machine Learning"]
   },
-  {
+  "weather": {
     "title": "Weather Tool",
     "name": "weather",
     "description": "A tool that provides weather information for a given location.",
@@ -113,7 +113,7 @@
     "category": "Developer Tools",
     "skills": ["Weather"]
   },
-  {
+  "image-resizer": {
     "title": "Image Resizer Tool",
     "name": "image-resizer",
     "description": "A tool that resizes images to a specified width and height.",
@@ -127,7 +127,7 @@
     "category": "Developer Tools",
     "skills": ["Image Processing", "Image Resizing"]
   },
-  {
+  "qr-code-generator": {
     "title": "QR Code Generator Tool",
     "name": "qr-code-generator",
     "description": "A tool that generates QR codes for a given text or URL.",
@@ -141,7 +141,7 @@
     "category": "Developer Tools",
     "skills": ["QR Codes", "Image Processing"]
   },
-  {
+  "password-generator": {
     "title": "Password Generator Tool",
     "name": "password-generator",
     "description": "A tool that generates secure passwords.",
@@ -155,7 +155,7 @@
     "category": "Security",
     "skills": ["Password Generation", "Security"]
   },
-  {
+  "jira-search": {
     "title": "Search JIRA issues using JQL",
     "name": "jira-search",
     "description": "A tool that searches JIRA issues using JQL (max. 50 results per query).",
@@ -169,7 +169,7 @@
     "category": "Developer Tools",
     "skills": ["JIRA", "JQL", "Software Development", "Issue Tracking"]
   },
-  {
+  "jira-issue-tracker": {
     "title": "Track issue relationships in JIRA",
     "name": "jira-issue-tracker",
     "description": "A tool that tracks issue relationships in JIRA (mentions, blocks, links, epics).",
@@ -183,4 +183,4 @@
     "category": "Developer Tools",
     "skills": ["JIRA", "Issue Tracking", "Software Development"]
   }
-]
+}
