@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkagentico_dev=self.webpackChunkagentico_dev||[]).push([[8121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"Agentic AI","permalink":"/blog/tags/agentic-ai","description":"Agentic AI is a term to describe the AI that can act autonomously and make decisions on its own.","count":1}]}')}}]);

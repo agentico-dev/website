@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://agentico.dev/tools</id>
+    <title>Agentico Blog</title>
+    <updated>2025-01-13T13:44:28.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://agentico.dev/tools"/>
+    <subtitle>Agentico Blog</subtitle>
+    <icon>https://agentico.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Echo]]></title>
+        <id>https://agentico.dev/tools/echo</id>
+        <link href="https://agentico.dev/tools/echo"/>
+        <updated>2025-01-13T13:44:28.000Z</updated>
+        <summary type="html"><![CDATA[Simple tool that echoes input messages.]]></summary>
+        <content type="html"><![CDATA[<p>Simple tool that echoes input messages.</p>]]></content>
+        <author>
+            <name>La Rebelion Labs</name>
+            <uri>https://rebelion.la</uri>
+        </author>
+        <category label="Mock" term="Mock"/>
+    </entry>
+</feed>

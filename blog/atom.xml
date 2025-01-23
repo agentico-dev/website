@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://agentico.dev/blog</id>
+    <title>Agentico Blog</title>
+    <updated>2025-01-13T13:44:28.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://agentico.dev/blog"/>
+    <subtitle>Agentico Blog</subtitle>
+    <icon>https://agentico.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[First Blog Post]]></title>
+        <id>https://agentico.dev/blog/first-blog-post</id>
+        <link href="https://agentico.dev/blog/first-blog-post"/>
+        <updated>2025-01-13T13:44:28.000Z</updated>
+        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
+        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
+<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <author>
+            <name>Adrian Escutia</name>
+            <uri>https://escutia.me/adrian</uri>
+        </author>
+        <category label="Agentic AI" term="Agentic AI"/>
+    </entry>
+</feed>
