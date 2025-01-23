@@ -2,7 +2,6 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-import webpack from 'webpack';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 // Hubspot account id
@@ -61,6 +60,9 @@ const config: Config = {
         gtag: {
           trackingID: 'G-YH16LCH8PT',
         },
+        googleTagManager: {
+          containerId: 'GTM-MVCJ8F3K',
+        },
         sitemap: {
           lastmod: 'date',
           changefreq: 'weekly',
@@ -93,8 +95,20 @@ const config: Config = {
           type: ['rss', 'atom'],
           xslt: true,
         },
-      }
+      },
     ],
+    // [
+    //   '@mcp-github-client-plugin', {
+    //     id: 'mcp-github-client-agentico',
+    //     serverUrl: 'http://localhost:3000/github',
+    //     repoDetails: {
+    //       owner: 'agentico-dev',
+    //       repo: 'website',
+    //       path: 'src/data/tools.json',
+    //       branch: 'deleteme',
+    //     },
+    //   }
+    // ],
     // 'docusaurus-node-polyfills'
   ],
 

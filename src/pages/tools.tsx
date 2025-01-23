@@ -3,10 +3,10 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import ToolsCatalog from '@site/src/components/Tools/ToolsCatalog';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import ToolsCatalog from '../components/Tools/ToolsCatalog';
 import ToolFormModal from '../components/Tools/ToolFormModal';
 import { handleToolSubmit } from '../components/Tools/Helpers';
 
@@ -51,7 +51,11 @@ interface ToolPageHeaderProps {
         setOpen={setShowAddTool}
         onSubmit={async (tool) => {
           console.log('Submitted tool', tool);
-          await handleToolSubmit(tool);
+          try {
+            await handleToolSubmit(tool);
+          } catch (error) {
+            console.error('Error sending tool request:', error);
+          }
           setShowAddTool(false);
         }}
       />

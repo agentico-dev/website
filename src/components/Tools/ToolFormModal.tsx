@@ -44,7 +44,7 @@ const ToolFormModal: React.FC<ToolFormProps> = ({
   open,
   setOpen
 }) => {
-  const [tool, setTool] = useState<Tool>({
+  const emptyTool: Tool = {
     title: '',
     name: '',
     description: '',
@@ -55,7 +55,8 @@ const ToolFormModal: React.FC<ToolFormProps> = ({
     license: '',
     category: '',
     skills: []
-  });
+  };
+  const [tool, setTool] = useState<Tool>(emptyTool);
   const [showThanksSnackbar, setShowThanksSnackbar] = useState(false);
   const [layoutModal, setLayoutModal] = useState<ModalDialogProps['layout'] | undefined>(
     undefined
@@ -76,21 +77,22 @@ const ToolFormModal: React.FC<ToolFormProps> = ({
     if (name === 'description' && value.length > DESCRIPTION_MAX_LENGTH) {
       specialField = value.substring(0, DESCRIPTION_MAX_LENGTH);
     }
-    // if title and not name, set name to the title, replacing spaces and special characters with hyphens
     setTool((prevTool) => ({
       ...prevTool,
       [name]: specialField ? specialField : value,
     }));
   };
-
+  
   const handleNameChange = (e: React.FocusEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+    // if title and not name, set name to the title, replacing spaces and special characters with hyphens
     if (name == 'name' || (name === 'title' && !tool.name)) {
       setTool((prevTool) => ({
         ...prevTool,
         name: value.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase()
       }));
     }
+    // @todo - add validation for name if it already exists
   }
 
   const handleAuthorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -117,6 +119,8 @@ const ToolFormModal: React.FC<ToolFormProps> = ({
     onSubmit(tool).then((): void => {
       handleClose();
       openThanksSnackbar();
+      // form reset
+      setTool(emptyTool);
     }).catch((error: Error): void => {
       console.error('Error updating tools.json:', error);
       alert('Failed to add tool.');

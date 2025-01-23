@@ -5,6 +5,7 @@
     "baseUrl": ".",
     "paths": {
       "@modelcontextprotocol/server-github/*": ["./node_modules/@modelcontextprotocol/server-github/*"],
+      "@mcp-github-client-plugin/": ["./mcp-github-client-plugin"],
     },
     "declaration": true,
     "declarationDir": "./types",
