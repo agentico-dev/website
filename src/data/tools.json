@@ -12,5 +12,19 @@
     "license": "MIT",
     "category": "Communication",
     "skills": []
+  },
+  "init-project": {
+    "title": "Create Microservices Kubernetes-based project",
+    "name": "@k1ssh/qbot-init-project",
+    "description": "A tool that creates a new project with a microservices architecture using Kubernetes.",
+    "author": {
+      "name": "La Rebelion Labs",
+      "url": "https://rebelion.la"
+    },
+    "homepage": "https://k1s.sh/qbot",
+    "repository": "https://github.com/la-rebelion/qbot-init-project",
+    "license": "MIT",
+    "category": "Developer Tools",
+    "skills": ["Kubernetes", "Microservices", "Software Development", "Helm"]
   }
 }

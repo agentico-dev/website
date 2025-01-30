@@ -15,14 +15,14 @@
   },
   "init-project": {
     "title": "Create Microservices Kubernetes-based project",
-    "name": "init-project",
+    "name": "@k1ssh/qbot-init-project",
     "description": "A tool that creates a new project with a microservices architecture using Kubernetes.",
     "author": {
       "name": "La Rebelion Labs",
       "url": "https://rebelion.la"
     },
-    "homepage": "https://k1s.sh/drift-detection",
-    "repository": "https://github.com/la-rebelion/k1s-init-project",
+    "homepage": "https://k1s.sh/qbot",
+    "repository": "https://github.com/la-rebelion/qbot-init-project",
     "license": "MIT",
     "category": "Developer Tools",
     "skills": ["Kubernetes", "Microservices", "Software Development", "Helm"]
@@ -36,7 +36,7 @@
       "url": "https://rebelion.la"
     },
     "homepage": "https://k1s.sh/drift-detection",
-    "repository": "https://github.com/la-rebelion/k1s-drift-detection",
+    "repository": "https://github.com/la-rebelion/qbot-drift-detection",
     "license": "MIT",
     "category": "DevOps Tools",
     "skills": ["Kubernetes", "Software Development", "Helm", "Continuous Integration", "Continuous Deployment", "Configuration Management"]
@@ -50,7 +50,7 @@
       "url": "https://rebelion.la"
     },
     "homepage": "https://k1s.sh",
-    "repository": "https://github.com/la-rebelion/k1s-resource-viewer",
+    "repository": "https://github.com/la-rebelion/qbot-resource-viewer",
     "license": "MIT",
     "category": "DevOps Tools",
     "skills": ["Kubernetes", "DevOps"]
@@ -64,7 +64,7 @@
       "url": "https://rebelion.la"
     },
     "homepage": "https://k1s.sh",
-    "repository": "https://github.com/la-rebelion/k1s-troubleshooter",
+    "repository": "https://github.com/la-rebelion/qbot-troubleshooter",
     "license": "MIT",
     "category": "DevOps Tools",
     "skills": ["Troubleshooting", "DevOps", "Logging", "Monitoring"]
