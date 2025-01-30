@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkagentico_dev=self.webpackChunkagentico_dev||[]).push([[1342],{9434:e=>{e.exports=JSON.parse('{"tags":[{"label":"kubernetes","permalink":"/tools/tags/kubernetes","count":1},{"label":"devops","permalink":"/tools/tags/devops","count":1},{"label":"Mock","permalink":"/tools/tags/mock","count":1}]}')}}]);

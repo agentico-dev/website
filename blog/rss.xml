@@ -4,19 +4,37 @@
         <title>Agentico Blog</title>
         <link>https://agentico.dev/blog</link>
         <description>Agentico Blog</description>
-        <lastBuildDate>Mon, 13 Jan 2025 13:44:28 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Jan 2025 13:19:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://agentico.dev/blog/first-blog-post</link>
-            <guid>https://agentico.dev/blog/first-blog-post</guid>
-            <pubDate>Mon, 13 Jan 2025 13:44:28 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Agentic AI</category>
+            <title><![CDATA[Run DeepSeek-R1 locally with Ollama on Docker]]></title>
+            <link>https://agentico.dev/blog/ollama-run-deepseek-on-docker</link>
+            <guid>https://agentico.dev/blog/ollama-run-deepseek-on-docker</guid>
+            <pubDate>Thu, 30 Jan 2025 13:19:59 GMT</pubDate>
+            <description><![CDATA[Would you like to run local LLMs, here is how you can do it with Ollama and the new DeepSeek-R1 model.]]></description>
+            <content:encoded><![CDATA[
+<p>Would you like to run local LLMs, here is how you can do it with <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">Ollama</a> and the new <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer">DeepSeek</a>-R1 model that is breaking the boundaries of AI. 🚀</p>
+<p>For those of us passionate about pushing the boundaries of AI, this is a game changer. 💡</p>
+<p>Being able to run powerful language models locally, with the flexibility to fine-tune and experiment in a more personalized and secure environment, opens up so many possibilities.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-ollama">What is Ollama?<a href="https://agentico.dev/blog/ollama-run-deepseek-on-docker#what-is-ollama" class="hash-link" aria-label="Direct link to What is Ollama?" title="Direct link to What is Ollama?">​</a></h2>
+<p>Ollama is a tool that allows you to run LLMs locally, securely, and efficiently. It is a powerful tool that allows you to run LLMs in a Docker container, and it is designed to be easy to use and flexible.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-deepseek-r1">What is DeepSeek-R1?<a href="https://agentico.dev/blog/ollama-run-deepseek-on-docker#what-is-deepseek-r1" class="hash-link" aria-label="Direct link to What is DeepSeek-R1?" title="Direct link to What is DeepSeek-R1?">​</a></h2>
+<p>DeepSeek-R1 is a powerful language model that is designed to be easy to use and flexible. It is a model that is designed to be able to understand and generate human-like text, and it is trained on a large dataset of text from the internet.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-run-deepseek-r1-locally-with-ollama-on-docker">How to run DeepSeek-R1 locally with Ollama on Docker?<a href="https://agentico.dev/blog/ollama-run-deepseek-on-docker#how-to-run-deepseek-r1-locally-with-ollama-on-docker" class="hash-link" aria-label="Direct link to How to run DeepSeek-R1 locally with Ollama on Docker?" title="Direct link to How to run DeepSeek-R1 locally with Ollama on Docker?">​</a></h2>
+<p>Steps to run <a href="https://github.com/deepseek-ai/DeepSeek-LLM" target="_blank" rel="noopener noreferrer">DeepSeek AI</a> locally with <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">Ollama</a> on Docker:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Install Ollama</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Pull the DeepSeek-R1 model</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">docker exec -it ollama ollama run deepseek-r1:7b</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Start chatting with DeepSeek-R1 - Web UI</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Open <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">http://localhost:3000</a> in your browser, and you are done!</p>
+<p>Let's make AI work for us, locally, efficiently, and creatively! 💥</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-screenshots">Step by step screenshots<a href="https://agentico.dev/blog/ollama-run-deepseek-on-docker#step-by-step-screenshots" class="hash-link" aria-label="Direct link to Step by step screenshots" title="Direct link to Step by step screenshots">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Step by step" src="https://agentico.dev/assets/images/ezgif.com-animated-gif-maker-26322d4ab0dfa45ff545689ca531e30d.gif" width="1522" height="855" class="img_ev3q"></p>
+<p>GIF generated with <a href="https://ezgif.com/" target="_blank" rel="noopener noreferrer">ezgic.com</a>. 🎨</p>
+<p>Go Rebels! ✊🏻</p>]]></content:encoded>
+            <category>Ollama</category>
+            <category>LLM</category>
+            <category>Docker</category>
+            <category>AI</category>
         </item>
     </channel>
 </rss>

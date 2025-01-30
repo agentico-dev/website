@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkagentico_dev=self.webpackChunkagentico_dev||[]).push([[1342],{9434:e=>{e.exports=JSON.parse('{"tags":[{"label":"Mock","permalink":"/tools/tags/mock","count":1}]}')}}]);

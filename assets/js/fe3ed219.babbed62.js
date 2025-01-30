@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkagentico_dev=self.webpackChunkagentico_dev||[]).push([[5416],{6107:e=>{e.exports=JSON.parse('{"authors":[{"name":"La Rebelion Labs","url":"https://rebelion.la","page":{"permalink":"/tools/authors/la-rebelion"},"key":"larebelion","count":1}]}')}}]);
