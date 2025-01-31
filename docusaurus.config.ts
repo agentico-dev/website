@@ -133,7 +133,7 @@ const config: Config = {
           position: 'left',
           label: 'Tools',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/agentico/agentico-dev',
           label: 'GitHub',

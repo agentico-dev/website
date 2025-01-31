@@ -32,3 +32,8 @@ kubernetes:
   label: Kubernetes
   permalink: /kubernetes
   description: Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.
+
+copilot:
+  label: Copilot
+  permalink: /copilot
+  description: The GitHub Copilot is an AI pair programmer that helps you write code faster and with fewer errors.
