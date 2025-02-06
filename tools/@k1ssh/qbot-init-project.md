@@ -14,20 +14,19 @@ Whether you're a beginner exploring cloud-native development or a seasoned DevOp
 
 🔧 You can try it directly from Claude for Desktop.
 
+## 🚀 Getting Started
+
+Configure the tool in your `claude_desktop_config.json` file:
+
 ```json
 {
   "mcpServers": {
     "init-project": {
-      "command": "/path/to/init-project/build/index.js"
+      "command": "npx",
+      "args": [ "-y", "@k1s/qbot-init-project" ]
     }
   }
 }
-```
-
-Or run the CLI tool directly:
-
-```bash
-qbclt init k8s-test
 ```
 
 From there, you can start building your Kubernetes and Helm projects with ease. 🚀

@@ -1,8 +1,8 @@
 ---
 title: "DeepSeek-R1 and GitHub Models: A New Alternative to Hugging Face?"
 description: "GitHub Models is a new AI model hosting service that allows developers to find, experiment with, and integrate AI models directly into their workflows."
-tags: [ai, github, llm]
-keywords: [ai, github, llm, deepseek, hugging face]
+tags: [ai, llm]
+keywords: [ai, github, llm, deepseek, hugging face, agentico]
 image: ./ai-models-marketplace-battle.webp
 authors: [adrian]
 ---
@@ -73,15 +73,19 @@ I tested the chat section of DeepSeek-R1 with the following prompt:
 
 :::tip
 
-"Can you explain what Agentic AI is and how I can start integrating it with Agentico.dev (documentation: https://agentico.dev/docs?)"
+"Can you explain Agentic AI and how I can start integrating it with Agentico.dev (documentation: https://agentico.dev/docs)?"
 
 :::
 
 It was a way for me to validate the model's understanding of a complex question, and to test if my documentation is clear an enough. 😅
 
-The response was impressive, showing the model's ability to comprehend and generate human-like text.
+The response was impressive, showing the model's ability to comprehend and generate human-like text, did you notice it's reasoning about the documentation and how it's line of thought is structured? 🤯
 
-PLACEHOLDER: *Add video or screenshot of the chat response*
+Well, the bad news is that it can't access the internet, so it can't check the documentation for you. 🥺
+
+
+<iframe width="100%"  style={{"aspect-ratio": "16 / 9"}} src="https://www.youtube.com/embed/RBaRkTDEJWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
 
 ### 👨🏻‍💻 **Sample Code: Running DeepSeek-R1 in JavaScript**
 
