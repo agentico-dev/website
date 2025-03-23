@@ -2,11 +2,206 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://agentico.dev/blog</id>
     <title>Agentico Blog</title>
-    <updated>2025-02-20T18:40:29.000Z</updated>
+    <updated>2025-03-23T11:24:25.049Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://agentico.dev/blog"/>
     <subtitle>Agentico Blog</subtitle>
     <icon>https://agentico.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[From Automated to Agentic: The Next Frontier in Enterprise Workflows]]></title>
+        <id>https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows</id>
+        <link href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows"/>
+        <updated>2025-03-23T11:24:25.049Z</updated>
+        <summary type="html"><![CDATA[Understand the key differences between automated, AI-powered, and agentic workflows. Learn when it makes sense to move to the next stage and how to implement it effectively.]]></summary>
+        <content type="html"><![CDATA[<p>Workflows power every business process, from approving vacation requests to orchestrating complex supply chains. As enterprises grow, their workflows must evolve. We've seen a big shift from simple rule-based systems to AI-driven solutions. Now, a new layer is emerging: "agentic" workflows, where AI not only gives insights but also acts on them.</p>
+<p>Let's explore three key stages:</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="90%" alt="AI Workflow Diagram"><defs><linearGradient id="a" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#1a1a2e"></stop><stop offset="100%" stop-color="#16213e"></stop></linearGradient><linearGradient id="b" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" style="stop-color:#f2f2f2;stop-opacity:1"></stop><stop offset="100%" style="stop-color:#e5e5e5;stop-opacity:1"></stop></linearGradient><linearGradient id="d" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" style="stop-color:#d6f0ff;stop-opacity:1"></stop><stop offset="100%" style="stop-color:#a8e1ff;stop-opacity:1"></stop></linearGradient><linearGradient id="e" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" style="stop-color:#f0d6ff;stop-opacity:1"></stop><stop offset="100%" style="stop-color:#e5c6f9;stop-opacity:1"></stop></linearGradient><marker id="f" markerHeight="10" markerWidth="10" orient="auto" refX="9" refY="5"><path fill="#333" d="m0 0 10 5-10 5Z"><animate attributeName="fill" dur="2s" repeatCount="indefinite" values="#333;#666;#888;#bbb"></animate></path></marker><marker id="g" markerHeight="10" markerWidth="10" orient="auto" refX="9" refY="5"><path fill="#06c" d="m0 0 10 5-10 5Z"><animate attributeName="fill" dur="2s" repeatCount="indefinite" values="#0066cc;#00aaff;#0066cc"></animate></path></marker><marker id="h" markerHeight="10" markerWidth="10" orient="auto" refX="9" refY="5"><path fill="#85d" d="m0 0 10 5-10 5Z"><animate attributeName="fill" dur="2s" repeatCount="indefinite" values="#8855dd;#aa66ff;#8855dd"></animate></path></marker><path id="i" fill="none" stroke="#e74c3c" stroke-dasharray="5,3" stroke-width="2" d="M580 485c-10 25-50 25-65 25"><animate attributeName="stroke" dur="2s" repeatCount="indefinite" values="#e74c3c;#ff6b6b;#e74c3c"></animate></path><path id="j" fill="none" stroke="#e74c3c" stroke-dasharray="5,3" stroke-width="2" d="M425 510c-55 0-85 0-85-15"><animate attributeName="stroke" dur="2s" repeatCount="indefinite" values="#e74c3c;#ff6b6b;#e74c3c"></animate></path><filter id="c" width="140%" height="140%" x="-20%" y="-20%"><feGaussianBlur result="blur" stdDeviation="5"></feGaussianBlur><feComposite in="SourceGraphic" in2="blur"></feComposite></filter></defs><rect width="100%" height="100%" fill="url(#a)"></rect><rect width="840" height="140" x="30" y="10" fill="url(#b)" stroke="#ddd" stroke-width="1.5" filter="url(#c)" rx="15" ry="15"></rect><rect width="840" height="160" x="30" y="165" fill="url(#d)" stroke="#87CEEB" stroke-width="1.5" filter="url(#c)" rx="15" ry="15"></rect><rect width="840" height="220" x="30" y="340" fill="url(#e)" stroke="#96c" stroke-width="1.5" filter="url(#c)" rx="15" ry="15"></rect><text x="40" y="45" fill="#222" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Automated Workflow (rule-based, non-AI)</text><text x="40" y="200" fill="#06a" font-family="Arial, sans-serif" font-size="22" font-weight="bold">AI Workflow (non-agentic)</text><text x="40" y="375" fill="#639" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Agentic Workflow</text><rect width="100" height="60" x="120" y="70" fill="#fff" stroke="#333" stroke-width="1.5" rx="10" ry="10"></rect><path fill="#fff" stroke="#333" stroke-width="1.5" d="m130 130-10 20 20-20Z"></path><text x="170" y="105" fill="#333" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">User query</text><rect width="120" height="60" x="280" y="70" fill="#fff" stroke="#333" stroke-width="1.5" rx="5" ry="5"></rect><text x="340" y="105" fill="#333" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Defined step 1</text><rect width="60" height="60" x="440" y="70" fill="#fff" stroke="#333" stroke-width="1.5" rx="5" ry="5"></rect><text x="470" y="105" fill="#333" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">...</text><rect width="120" height="60" x="550" y="70" fill="#fff" stroke="#333" stroke-width="1.5" rx="5" ry="5"></rect><text x="610" y="105" fill="#333" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Defined step n</text><rect width="100" height="60" x="730" y="70" fill="#fff" stroke="#333" stroke-width="1.5" rx="10" ry="10"></rect><path fill="#fff" stroke="#333" stroke-width="1.5" d="m820 130 10 20-20-20Z"></path><text x="780" y="105" fill="#333" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Response</text><path stroke="#333" stroke-width="2" marker-end="url(#f)" d="M220 100h60"></path><path stroke="#333" stroke-width="2" marker-end="url(#f)" d="M400 100h40"></path><path stroke="#333" stroke-width="2" marker-end="url(#f)" d="M500 100h50"></path><path stroke="#333" stroke-width="2" marker-end="url(#f)" d="M670 100h60"></path><rect width="100" height="60" x="120" y="225" fill="#fff" stroke="#07c" stroke-width="1.5" rx="10" ry="10"></rect><path fill="#fff" stroke="#07c" stroke-width="1.5" d="m130 285-10 20 20-20Z"></path><text x="170" y="260" fill="#07c" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">User query</text><rect width="200" height="100" x="340" y="205" fill="#fff" stroke="#07c" stroke-dasharray="5,3" stroke-width="1.5" rx="5" ry="5"></rect><text x="570" y="230" fill="#07c" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">AI model</text><circle cx="520" cy="215" r="5" fill="#0af" filter="url(#c)"><animate attributeName="r" dur="2s" repeatCount="indefinite" values="5;6;5"></animate></circle><circle cx="535" cy="225" r="3" fill="#0af" filter="url(#c)"><animate attributeName="r" begin="0.3s" dur="2s" repeatCount="indefinite" values="3;4;3"></animate></circle><circle cx="525" cy="235" r="4" fill="#0af" filter="url(#c)"><animate attributeName="r" begin="0.6s" dur="2s" repeatCount="indefinite" values="4;5;4"></animate></circle><path stroke="#0af" d="m520 215 15 10M535 225l-10 10M525 235l-5-20"></path><rect width="120" height="60" x="380" y="225" fill="#fff" stroke="#07c" stroke-width="1.5" rx="5" ry="5"></rect><text x="440" y="260" fill="#07c" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Act on user query</text><rect width="100" height="60" x="730" y="225" fill="#fff" stroke="#07c" stroke-width="1.5" rx="10" ry="10"></rect><path fill="#fff" stroke="#07c" stroke-width="1.5" d="m820 285 10 20-20-20Z"></path><text x="780" y="260" fill="#07c" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Response</text><path stroke="#07c" stroke-width="2" marker-end="url(#g)" d="M220 255h120"></path><path stroke="#07c" stroke-width="2" marker-end="url(#g)" d="M540 255h190"></path><rect width="100" height="60" x="120" y="425" fill="#fff" stroke="#85d" stroke-width="1.5" rx="10" ry="10"></rect><path fill="#fff" stroke="#85d" stroke-width="1.5" d="m130 485-10 20 20-20Z"></path><text x="170" y="460" fill="#85d" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">User query</text><rect width="430" height="155" x="240" y="375" fill="#fff" stroke="#85d" stroke-dasharray="5,3" stroke-width="1.5" rx="5" ry="5"></rect><text x="635" y="370" fill="#85d" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">AI agent</text><text x="325" y="395" fill="#85d" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Planning</text><rect width="80" height="80" x="300" y="405" fill="#fff" stroke="#85d" stroke-width="1.5" rx="5" ry="5"></rect><text x="340" y="445" fill="#85d" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Make a</text><text x="340" y="465" fill="#85d" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">plan</text><path fill="none" stroke="#85d" d="M305 410h16v16h-16z"></path><path stroke="#85d" d="M309 414h8M309 418h8M309 422h8"></path><text x="455" y="395" fill="#85d" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Tool Use</text><rect width="80" height="80" x="420" y="405" fill="#fff" stroke="#85d" stroke-width="1.5" rx="5" ry="5"></rect><text x="460" y="445" fill="#85d" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Execute</text><text x="460" y="460" fill="#85d" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">actions</text><text x="460" y="477" fill="#85d" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">with tools</text><path fill="none" stroke="#85d" d="M425 410h16v16h-16z"></path><path stroke="#85d" d="M429 414h8M429 418h8M429 422h8"></path><text x="580" y="395" fill="#85d" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Reflection</text><rect width="80" height="80" x="540" y="405" fill="#fff" stroke="#85d" stroke-width="1.5" rx="5" ry="5"></rect><text x="580" y="445" fill="#85d" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Reflect on</text><text x="580" y="460" fill="#85d" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">results of</text><text x="580" y="477" fill="#85d" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">actions</text><circle cx="553" cy="420" r="8" fill="none" stroke="#85d"></circle><path stroke="#85d" d="M550 420h6m-3-3v6"></path><rect width="100" height="60" x="730" y="425" fill="#fff" stroke="#85d" stroke-width="1.5" rx="10" ry="10"></rect><path fill="#fff" stroke="#85d" stroke-width="1.5" d="m820 485 10 20-20-20Z"></path><text x="780" y="460" fill="#85d" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Response</text><rect width="60" height="25" x="650" y="415" fill="#4caf50" rx="12" ry="12"><animate attributeName="fill" dur="2s" repeatCount="indefinite" values="#4caf50;#66bb6a;#4caf50"></animate></rect><text x="680" y="432" fill="#fff" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Result ok</text><rect width="90" height="25" x="425" y="495" fill="#e74c3c" rx="12" ry="12"><animate attributeName="fill" dur="2s" repeatCount="indefinite" values="#e74c3c;#ff6b6b;#e74c3c"></animate></rect><text x="470" y="512" fill="#fff" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Result not ok</text><path stroke="#85d" stroke-width="2" marker-end="url(#h)" d="M220 455h80"></path><path stroke="#85d" stroke-width="2" marker-end="url(#h)" d="M380 455h40"></path><path stroke="#85d" stroke-width="2" marker-end="url(#h)" d="M500 455h40"></path><path stroke="#85d" stroke-width="2" marker-end="url(#h)" d="M620 455h110"></path><use href="#i"></use><path fill="#e74c3c" d="m335 495 5-10 5 10z"><animate attributeName="fill" dur="2s" repeatCount="indefinite" values="#e74c3c;#ff6b6b;#e74c3c"></animate></path><use href="#j"></use><circle cx="240" cy="100" r="3" fill="#333" class="data-flow"><animate attributeName="cx" dur="2s" repeatCount="indefinite" values="220;280"></animate><animate attributeName="opacity" dur="2s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="435" cy="100" r="3" fill="#333" class="data-flow"><animate attributeName="cx" begin="0.2s" dur="2s" repeatCount="indefinite" values="400;440"></animate><animate attributeName="opacity" begin="0.2s" dur="2s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="500" cy="100" r="3" fill="#333" class="data-flow"><animate attributeName="cx" begin="0.4s" dur="2s" repeatCount="indefinite" values="500;550"></animate><animate attributeName="opacity" begin="0.4s" dur="2s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="690" cy="100" r="3" fill="#333" class="data-flow"><animate attributeName="cx" begin="0.6s" dur="2s" repeatCount="indefinite" values="650;730"></animate><animate attributeName="opacity" begin="0.6s" dur="2s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="270" cy="255" r="3" fill="#07c" class="data-flow"><animate attributeName="cx" dur="2.5s" repeatCount="indefinite" values="220;340"></animate><animate attributeName="opacity" dur="2.5s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="600" cy="255" r="3" fill="#07c" class="data-flow"><animate attributeName="cx" begin="0.3s" dur="3s" repeatCount="indefinite" values="520;730"></animate><animate attributeName="opacity" begin="0.3s" dur="3s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="260" cy="455" r="3" fill="#85d" class="data-flow"><animate attributeName="cx" dur="2s" repeatCount="indefinite" values="220;300"></animate><animate attributeName="opacity" dur="2s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="400" cy="455" r="3" fill="#85d" class="data-flow"><animate attributeName="cx" begin="0.2s" dur="1.5s" repeatCount="indefinite" values="380;420"></animate><animate attributeName="opacity" begin="0.2s" dur="1.5s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="520" cy="455" r="3" fill="#85d" class="data-flow"><animate attributeName="cx" begin="0.4s" dur="1.5s" repeatCount="indefinite" values="500;540"></animate><animate attributeName="opacity" begin="0.4s" dur="1.5s" repeatCount="indefinite" values="0;1;0"></animate></circle><circle cx="675" cy="455" r="3" fill="#85d" class="data-flow"><animate attributeName="cx" begin="0.6s" dur="2s" repeatCount="indefinite" values="620;730"></animate><animate attributeName="opacity" begin="0.6s" dur="2s" repeatCount="indefinite" values="0;1;0"></animate></circle></svg>
+<ol>
+<li><strong>Automated workflows (rule-based, non-AI).</strong></li>
+<li><strong>AI workflows (non-agentic).</strong></li>
+<li><strong>Agentic workflows (fully AI-driven).</strong></li>
+</ol>
+<p>We'll see what each stage looks like, when it makes sense to move from one to the next, and how to do it without losing your mind—or your budget.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1--automated-workflows-rule-based-non-ai">1- Automated Workflows (Rule-Based, Non-AI)<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#1--automated-workflows-rule-based-non-ai" class="hash-link" aria-label="Direct link to 1- Automated Workflows (Rule-Based, Non-AI)" title="Direct link to 1- Automated Workflows (Rule-Based, Non-AI)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-they-are">What they are<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#what-they-are" class="hash-link" aria-label="Direct link to What they are" title="Direct link to What they are">​</a></h3>
+<p>Automated workflows rely on predefined rules. Think of it like a flowchart that never changes unless you manually update it. They typically use Business Process Model and Notation (<a href="https://www.omg.org/spec/BPMN/2.0.2/About-BPMN" target="_blank" rel="noopener noreferrer">BPMN</a>) and process engines such as <a href="https://page.camunda.com/wp-camunda-compared-to-alternatives" target="_blank" rel="noopener noreferrer">Camunda</a> or other workflow automation platforms. These solutions are stable, predictable, and easy to audit. One advantage is that non-technical users can often manage them, because of the <a href="https://rebelion.la/visualizing-ideas-and-designs-with-diagram-as-code-tools" target="_blank" rel="noopener noreferrer">visual representation</a> of the process, which is easy to understand. You can <a href="https://bpmn.io/toolkit/bpmn-js/" target="_blank" rel="noopener noreferrer">integrate them within your existing systems</a>, like CRMs or ERPs.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="real-life-example">Real-life example<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#real-life-example" class="hash-link" aria-label="Direct link to Real-life example" title="Direct link to Real-life example">​</a></h2>
+<p><a href="https://rebelion.la/experience-the-power-of-workflow-engines-in-kubernetes#heading-the-popularity-of-workflows-in-banking-ecommerce-and-beyond" target="_blank" rel="noopener noreferrer">Workflows are popular in finance, eCommerce</a>, healthcare, logistics, HR, customer service, well, everywhere! They are used to automate repetitive tasks, such as sending emails, updating records, or generating reports. For example, in a loan application system:</p>
+<ul>
+<li>The system checks if the applicant's credit score is above a certain threshold.</li>
+<li>If yes, it sends an automated email approval.</li>
+<li>If no, it flags the case for manual review.</li>
+</ul>
+<p>No machine learning or advanced AI is needed. Everything is based on "if-this-then-that" logic.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-benefits">Key benefits<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#key-benefits" class="hash-link" aria-label="Direct link to Key benefits" title="Direct link to Key benefits">​</a></h2>
+<ul>
+<li><strong>Reliability:</strong> You know exactly how the system will behave.</li>
+<li><strong>Clarity:</strong> Every step is documented. You can easily track the process flow.</li>
+<li><strong>Simplicity:</strong> Anyone who understands BPMN or standard workflow logic can manage it.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="drawbacks">Drawbacks:<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#drawbacks" class="hash-link" aria-label="Direct link to Drawbacks:" title="Direct link to Drawbacks:">​</a></h3>
+<ul>
+<li><strong>Rigid:</strong> Any new rule requires code or configuration changes.</li>
+<li><strong>Limited intelligence:</strong> The system can't learn from data or adapt on its own.</li>
+<li><strong>Maintenance overhead:</strong> As your process grows in complexity, so do the rules.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2--ai-workflows-non-agentic">2- AI Workflows (Non-Agentic)<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#2--ai-workflows-non-agentic" class="hash-link" aria-label="Direct link to 2- AI Workflows (Non-Agentic)" title="Direct link to 2- AI Workflows (Non-Agentic)">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-they-are-1">What they are<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#what-they-are-1" class="hash-link" aria-label="Direct link to What they are" title="Direct link to What they are">​</a></h2>
+<p>AI workflows introduce machine learning or data-driven decision-making into the process. However, the AI is mostly giving insights or predictions, not making final decisions on its own. Human approval or further system logic is still required.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="real-life-example-1">Real-life example<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#real-life-example-1" class="hash-link" aria-label="Direct link to Real-life example" title="Direct link to Real-life example">​</a></h2>
+<p>Returning to our loan system:</p>
+<ul>
+<li>An AI model scores each application for risk based on a variety of data points (income, credit history, spending patterns).</li>
+<li>The workflow engine (like Camunda) still routes the application, but now the route can change based on the AI's risk score.</li>
+<li>If the AI score is high-risk, the application automatically goes to a specialist. If it's low-risk, the system continues with automated approval steps.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-benefits-1">Key benefits<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#key-benefits-1" class="hash-link" aria-label="Direct link to Key benefits" title="Direct link to Key benefits">​</a></h2>
+<ul>
+<li><strong>Smarter decisions:</strong> AI brings predictive power.</li>
+<li><strong>Reduced manual checks:</strong> The system flags edge cases.</li>
+<li><strong>More adaptable:</strong> AI models can be retrained as data changes.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="drawbacks-1">Drawbacks<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#drawbacks-1" class="hash-link" aria-label="Direct link to Drawbacks" title="Direct link to Drawbacks">​</a></h2>
+<ul>
+<li><strong>Complexity:</strong> You now have to manage data pipelines, model training, and integration with your workflow tool.</li>
+<li><strong>Still partially manual:</strong> You might still need human oversight to approve or override AI decisions.</li>
+<li><strong>Possible bias:</strong> If your training data is skewed, your model could make unfair or inaccurate predictions.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3--agentic-workflows-fully-ai-driven">3- Agentic Workflows (Fully AI-Driven)<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#3--agentic-workflows-fully-ai-driven" class="hash-link" aria-label="Direct link to 3- Agentic Workflows (Fully AI-Driven)" title="Direct link to 3- Agentic Workflows (Fully AI-Driven)">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-they-are-2">What they are<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#what-they-are-2" class="hash-link" aria-label="Direct link to What they are" title="Direct link to What they are">​</a></h2>
+<p>Agentic workflows go a step further. The AI "agent" can plan, execute actions, and reflect on results. Instead of just scoring or suggesting, it's capable of taking the next step in the process automatically. This often involves large language models (LLMs) or advanced algorithms that can reason about tasks, break them down, and adapt.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="real-life-example-2">Real-life example<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#real-life-example-2" class="hash-link" aria-label="Direct link to Real-life example" title="Direct link to Real-life example">​</a></h2>
+<p>Think of an AI-driven underwriting system:</p>
+<ul>
+<li>The AI agent collects data from multiple sources, from bank statements to social media (if allowed).</li>
+<li>It decides whether an application should be fast-tracked, flagged, or declined—without waiting for human input.</li>
+<li>It monitors performance. If it sees an unusual spike in defaults, it re-examines its strategy, updates its rules, and even requests new data to improve accuracy.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-benefits-2">Key benefits<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#key-benefits-2" class="hash-link" aria-label="Direct link to Key benefits" title="Direct link to Key benefits">​</a></h2>
+<ul>
+<li><strong>End-to-end automation:</strong> Minimal human intervention is needed for normal cases.</li>
+<li><strong>Continuous learning:</strong> The agent improves its decisions over time.</li>
+<li><strong>Adaptive:</strong> If new information comes in, the agent can modify its plan and respond to unexpected events.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="drawbacks-2">Drawbacks<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#drawbacks-2" class="hash-link" aria-label="Direct link to Drawbacks" title="Direct link to Drawbacks">​</a></h2>
+<ul>
+<li><strong>High complexity:</strong> Building and maintaining an agentic workflow requires advanced AI expertise.</li>
+<li><strong>Risk management:</strong> When the AI acts independently, errors or biases can scale quickly.</li>
+<li><strong>Regulatory hurdles:</strong> In industries like finance or healthcare, letting AI run end-to-end might clash with compliance rules.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="when-to-move-from-automated-to-ai-to-agentic">When to Move from Automated to AI to Agentic<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#when-to-move-from-automated-to-ai-to-agentic" class="hash-link" aria-label="Direct link to When to Move from Automated to AI to Agentic" title="Direct link to When to Move from Automated to AI to Agentic">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-automated-rule-based--ai-non-agentic">1. Automated (Rule-Based) → AI (Non-Agentic)<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#1-automated-rule-based--ai-non-agentic" class="hash-link" aria-label="Direct link to 1. Automated (Rule-Based) → AI (Non-Agentic)" title="Direct link to 1. Automated (Rule-Based) → AI (Non-Agentic)">​</a></h2>
+<ul>
+<li><strong>When to do it:</strong>
+<ul>
+<li>You have large data sets.</li>
+<li>You want to reduce manual tasks and errors.</li>
+<li>Your rules keep changing, and you need something more flexible.</li>
+</ul>
+</li>
+<li><strong>When to hold off:</strong>
+<ul>
+<li>You have no reliable data or your processes are still too simple to justify the investment.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-ai-non-agentic--agentic-fully-ai-driven">2. AI (Non-Agentic) → Agentic (Fully AI-Driven)<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#2-ai-non-agentic--agentic-fully-ai-driven" class="hash-link" aria-label="Direct link to 2. AI (Non-Agentic) → Agentic (Fully AI-Driven)" title="Direct link to 2. AI (Non-Agentic) → Agentic (Fully AI-Driven)">​</a></h2>
+<ul>
+<li><strong>When to do it:</strong>
+<ul>
+<li>You need real-time decisions without human bottlenecks.</li>
+<li>Your AI models are already trusted and well-tested.</li>
+<li>Your regulatory environment allows for automated decision-making.</li>
+</ul>
+</li>
+<li><strong>When to hold off:</strong>
+<ul>
+<li>You're not ready for advanced governance, auditing, and compliance.</li>
+<li>The cost of mistakes is too high (e.g., health diagnoses, legal matters).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="steps-to-evolve-your-workflow-approach">Steps to Evolve Your Workflow Approach<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#steps-to-evolve-your-workflow-approach" class="hash-link" aria-label="Direct link to Steps to Evolve Your Workflow Approach" title="Direct link to Steps to Evolve Your Workflow Approach">​</a></h2>
+<ol>
+<li>
+<p><strong>Start with your pain points:</strong>
+Look at where your rule-based system is struggling. Maybe you have too many manual reviews or too many exceptions. This is a sign you could benefit from AI.</p>
+</li>
+<li>
+<p><strong>Assess your data readiness:</strong></p>
+<ul>
+<li><strong>Data quality:</strong> Garbage in, garbage out. Ensure your data is accurate and complete.</li>
+<li><strong>Data quantity:</strong> For machine learning, more data is often better.</li>
+<li><strong>Security &amp; compliance:</strong> Check how you collect, store, and protect data.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pick the right tool:</strong></p>
+<ul>
+<li><strong>Rule-based solutions:</strong> BPMN engines like <a href="https://www.gartner.com/reviews/market/business-process-automation-tools/vendor/camunda/product/camunda/alternatives" target="_blank" rel="noopener noreferrer">Camunda</a> can help you start simple.</li>
+<li><strong>AI add-ons:</strong> Many workflow tools let you plug in AI services—like a credit risk scoring model—without rebuilding from scratch.</li>
+<li><strong>Agentic frameworks:</strong> If you go fully agentic, you may need a specialized platform that supports advanced AI planning, reflection, and self-improvement.</li>
+</ul>
+</li>
+<li>
+<p><strong>Run a pilot project:</strong></p>
+<ul>
+<li><strong>Choose a low-risk use case:</strong> Don't start with mission-critical tasks.</li>
+<li><strong>Measure impact:</strong> Evaluate speed, accuracy, and cost savings.</li>
+<li><strong>Refine your approach:</strong> Tweak rules, retrain models, or adjust the AI's autonomy as needed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scale up gradually:</strong></p>
+<ul>
+<li><strong>Train your team:</strong> Everyone from business analysts to developers should understand how the AI works.</li>
+<li><strong>Implement governance:</strong> Define clear escalation paths, fallback rules, and auditing.</li>
+<li><strong>Monitor performance:</strong> Use dashboards and alerts to catch anomalies early.</li>
+</ul>
+</li>
+<li>
+<p><strong>Review &amp; repeat:</strong></p>
+<ul>
+<li><strong>Regular updates:</strong> AI models can degrade over time if the data environment changes.</li>
+<li><strong>Continuous improvement:</strong> If agentic workflows work well for one department, see if they can help another.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="balancing-innovation-and-practicality">Balancing Innovation and Practicality<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#balancing-innovation-and-practicality" class="hash-link" aria-label="Direct link to Balancing Innovation and Practicality" title="Direct link to Balancing Innovation and Practicality">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-big-question">The big question<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#the-big-question" class="hash-link" aria-label="Direct link to The big question" title="Direct link to The big question">​</a></h2>
+<p>Is it always worth going fully agentic? Not always. Many businesses find a sweet spot in AI-enhanced workflows that still have human checks at critical points. Others, especially in fast-moving tech fields, see big wins with agentic systems.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="rule-of-thumb">Rule of thumb<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#rule-of-thumb" class="hash-link" aria-label="Direct link to Rule of thumb" title="Direct link to Rule of thumb">​</a></h2>
+<ul>
+<li><strong>Go agentic</strong> if you need real-time decisions and can handle the complexity.</li>
+<li><strong>Stick to AI (non-agentic)</strong> if your industry is regulated or you prefer human control.</li>
+<li><strong>Remain automated (rule-based)</strong> if your processes are straightforward and stable.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-road-ahead">The Road Ahead<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#the-road-ahead" class="hash-link" aria-label="Direct link to The Road Ahead" title="Direct link to The Road Ahead">​</a></h2>
+<p>Automated, AI, or agentic—each stage of workflow evolution offers different levels of efficiency, intelligence, and flexibility. It's not about jumping to the fanciest technology just because it's there. It's about picking the approach that matches your current business needs, data maturity, and risk tolerance.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bottom-line">Bottom line<a href="https://agentico.dev/blog/from-automated-to-agentic-the-future-of-enterprise-workflows#bottom-line" class="hash-link" aria-label="Direct link to Bottom line" title="Direct link to Bottom line">​</a></h2>
+<ul>
+<li><strong>Start small:</strong> Don't boil the ocean.</li>
+<li><strong>Evolve as needed:</strong> Add AI in places where it truly helps.</li>
+<li><strong>Aim for agentic only if it makes sense:</strong> Because while a fully autonomous workflow sounds cool, it's not always the best fit for every enterprise.</li>
+</ul>
+<p>At the end of the day, it's your customers, employees, and bottom line that matter most. Think of your workflow strategy like a staircase. Each step—automated, AI, agentic—has its own challenges and rewards. When you climb with care, you'll end up with a system that's not only powerful but also practical. And that's the real win.</p>
+<p>What are your thoughts on the evolution of workflows? Are you ready to take the leap into agentic workflows, or do you prefer to keep things simple? Let us know in the comments!</p>
+<p>Go Rebels! ✊🏻</p>]]></content>
+        <author>
+            <name>Adrian Escutia</name>
+            <uri>https://escutia.me/adrian</uri>
+        </author>
+        <category label="AI" term="AI"/>
+        <category label="Agentic AI" term="Agentic AI"/>
+        <category label="Workflow" term="Workflow"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Emerging Patterns in GenAI: How to Building Next-Gen AI Products]]></title>
         <id>https://agentico.dev/blog/genai-patterns</id>
@@ -92,7 +287,7 @@
         </author>
         <category label="AI" term="AI"/>
         <category label="Agentic AI" term="Agentic AI"/>
-        <category label="genai" term="genai"/>
+        <category label="GenAI" term="GenAI"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[MCP needs a Standard Implementation pattern to Unlock the Future of AI]]></title>
