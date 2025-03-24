@@ -37,3 +37,23 @@ copilot:
   label: Copilot
   permalink: /copilot
   description: The GitHub Copilot is an AI pair programmer that helps you write code faster and with fewer errors.
+
+workflows:
+  label: Workflow
+  permalink: /workflow
+  description: A workflow is a sequence of tasks that processes a set of data.
+
+genai:
+  label: GenAI
+  permalink: /genai
+  description: Generative AI (GenAI) is a type of AI that can generate new content, such as text, images, or music.
+
+software-engineering:
+  label: Software Engineering
+  permalink: /software-engineering
+  description: Software engineering is the application of engineering principles to software development.
+
+microservices:
+  label: Microservices
+  permalink: /microservices
+  description: Microservices is an architectural style that structures an application as a collection of small, autonomous services.

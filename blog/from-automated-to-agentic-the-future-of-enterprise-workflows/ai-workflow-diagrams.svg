@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580">
+  <!-- Definitions for gradients, glows and animations -->
+  <defs>
+    <!-- Background gradients -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e" />
+      <stop offset="100%" stop-color="#16213e" />
+    </linearGradient>
+    <linearGradient id="topBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f2f2f2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e5e5e5;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="midBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d6f0ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8e1ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="botBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e5c6f9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effects -->
+    <!-- Glow filters for different components -->    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>    
+    
+    <!-- Animated arrows -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#333333">
+        <animate attributeName="fill" values="#333;#666;#888;#bbb" dur="2s" repeatCount="indefinite" />
+      </path>
+    </marker>
+    
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#0066cc">
+        <animate attributeName="fill" values="#0066cc;#00aaff;#0066cc" dur="2s" repeatCount="indefinite" />
+      </path>
+    </marker>
+    
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8855dd">
+        <animate attributeName="fill" values="#8855dd;#aa66ff;#8855dd" dur="2s" repeatCount="indefinite" />
+      </path>
+    </marker>
+    
+    <!-- Animated path for Tool OK to Planning -->
+    <path id="returnPath" d="M580,485 C570,510 530,510 515,510" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,3" fill="none">
+      <animate attributeName="stroke" values="#e74c3c;#ff6b6b;#e74c3c" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path id="returnPath2" d="M425,510 C370,510 340,510 340,495" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,3" fill="none">
+      <animate attributeName="stroke" values="#e74c3c;#ff6b6b;#e74c3c" dur="2s" repeatCount="indefinite" />
+    </path>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)" />
+  <!-- Main background sections -->
+  <!-- Automated Workflow section -->
+  <rect x="30" y="10" width="840" height="140" rx="15" ry="15" fill="url(#topBgGradient)" stroke="#dddddd" stroke-width="1.5" filter="url(#glow)" />
+  
+  <!-- AI Workflow section -->
+  <rect x="30" y="165" width="840" height="160" rx="15" ry="15" fill="url(#midBgGradient)" stroke="#87CEEB" stroke-width="1.5" filter="url(#glow)" />
+  
+  <!-- Agentic Workflow section -->
+  <rect x="30" y="340" width="840" height="220" rx="15" ry="15" fill="url(#botBgGradient)" stroke="#9966cc" stroke-width="1.5" filter="url(#glow)" />
+  
+  <!-- Section headings -->
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#222222">Automated Workflow (rule-based, non-AI)</text>
+  
+  <text x="40" y="200" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#0066aa">AI Workflow (non-agentic)</text>
+  
+  <text x="40" y="375" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#663399">Agentic Workflow</text>
+  
+  <!-- Automated Workflow Components -->
+  <!-- User query -->
+  <rect x="120" y="70" width="100" height="60" rx="10" ry="10" fill="white" stroke="#333333" stroke-width="1.5" />
+  <path d="M130,130 L120,150 L140,130 Z" fill="white" stroke="#333333" stroke-width="1.5" />
+  <text x="170" y="105" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">User query</text>
+  
+  <!-- Step 1 -->
+  <rect x="280" y="70" width="120" height="60" rx="5" ry="5" fill="white" stroke="#333333" stroke-width="1.5" />
+  <text x="340" y="105" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">Defined step 1</text>
+  
+  <!-- Ellipsis -->
+  <rect x="440" y="70" width="60" height="60" rx="5" ry="5" fill="white" stroke="#333333" stroke-width="1.5" />
+  <text x="470" y="105" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#333333">...</text>
+  
+  <!-- Step n -->
+  <rect x="550" y="70" width="120" height="60" rx="5" ry="5" fill="white" stroke="#333333" stroke-width="1.5" />
+  <text x="610" y="105" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">Defined step n</text>
+  
+  <!-- Response -->
+  <rect x="730" y="70" width="100" height="60" rx="10" ry="10" fill="white" stroke="#333333" stroke-width="1.5" />
+  <path d="M820,130 L830,150 L810,130 Z" fill="white" stroke="#333333" stroke-width="1.5" />
+  <text x="780" y="105" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">Response</text>
+  
+  <!-- Arrows for Automated Workflow -->
+  <line x1="220" y1="100" x2="280" y2="100" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="100" x2="440" y2="100" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="500" y1="100" x2="550" y2="100" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="670" y1="100" x2="730" y2="100" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- AI Workflow Components -->
+  <!-- User query -->
+  <rect x="120" y="225" width="100" height="60" rx="10" ry="10" fill="white" stroke="#0077cc" stroke-width="1.5" />
+  <path d="M130,285 L120,305 L140,285 Z" fill="white" stroke="#0077cc" stroke-width="1.5" />
+  <text x="170" y="260" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0077cc">User query</text>
+  
+  <!-- AI model box -->
+  <rect x="340" y="205" width="200" height="100" rx="5" ry="5" fill="white" stroke="#0077cc" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="570" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0077cc">AI model</text>
+  
+  <!-- AI nodes -->
+  <circle cx="520" cy="215" r="5" fill="#00aaff" filter="url(#glow)">
+    <animate attributeName="r" values="5;6;5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="535" cy="225" r="3" fill="#00aaff" filter="url(#glow)">
+    <animate attributeName="r" values="3;4;3" dur="2s" repeatCount="indefinite" begin="0.3s" />
+  </circle>
+  <circle cx="525" cy="235" r="4" fill="#00aaff" filter="url(#glow)">
+    <animate attributeName="r" values="4;5;4" dur="2s" repeatCount="indefinite" begin="0.6s" />
+  </circle>
+  <line x1="520" y1="215" x2="535" y2="225" stroke="#00aaff" stroke-width="1" />
+  <line x1="535" y1="225" x2="525" y2="235" stroke="#00aaff" stroke-width="1" />
+  <line x1="525" y1="235" x2="520" y2="215" stroke="#00aaff" stroke-width="1" />
+  
+  <!-- Act on query -->
+  <rect x="380" y="225" width="120" height="60" rx="5" ry="5" fill="white" stroke="#0077cc" stroke-width="1.5" />
+  <text x="440" y="260" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0077cc">Act on user query</text>
+  
+  <!-- Response -->
+  <rect x="730" y="225" width="100" height="60" rx="10" ry="10" fill="white" stroke="#0077cc" stroke-width="1.5" />
+  <path d="M820,285 L830,305 L810,285 Z" fill="white" stroke="#0077cc" stroke-width="1.5" />
+  <text x="780" y="260" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0077cc">Response</text>
+  
+  <!-- Arrows for AI Workflow -->
+  <line x1="220" y1="255" x2="340" y2="255" stroke="#0077cc" stroke-width="2" marker-end="url(#arrowhead-blue)" />
+  <line x1="540" y1="255" x2="730" y2="255" stroke="#0077cc" stroke-width="2" marker-end="url(#arrowhead-blue)" />
+  
+  <!-- Agentic Workflow Components -->
+  <!-- User query -->
+  <rect x="120" y="425" width="100" height="60" rx="10" ry="10" fill="white" stroke="#8855dd" stroke-width="1.5" />
+  <path d="M130,485 L120,505 L140,485 Z" fill="white" stroke="#8855dd" stroke-width="1.5" />
+  <text x="170" y="460" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8855dd">User query</text>
+  
+  <!-- AI agent box -->
+  <rect x="240" y="375" width="430" height="155" rx="5" ry="5" fill="white" stroke="#8855dd" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="635" y="370" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8855dd">AI agent</text>
+  
+  <!-- Planning -->
+  <text x="325" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8855dd">Planning</text>
+  
+  <!-- Make a plan -->
+  <rect x="300" y="405" width="80" height="80" rx="5" ry="5" fill="white" stroke="#8855dd" stroke-width="1.5" />
+  <text x="340" y="445" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8855dd">Make a</text>
+  <text x="340" y="465" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8855dd">plan</text>
+  <!-- Plan icon -->
+  <rect x="305" y="410" width="16" height="16" fill="none" stroke="#8855dd" stroke-width="1" />
+  <line x1="309" y1="414" x2="317" y2="414" stroke="#8855dd" stroke-width="1" />
+  <line x1="309" y1="418" x2="317" y2="418" stroke="#8855dd" stroke-width="1" />
+  <line x1="309" y1="422" x2="317" y2="422" stroke="#8855dd" stroke-width="1" />
+  
+  <!-- Tool Use -->
+  <text x="455" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8855dd">Tool Use</text>
+  
+  <!-- Execute actions -->
+  <rect x="420" y="405" width="80" height="80" rx="5" ry="5" fill="white" stroke="#8855dd" stroke-width="1.5" />
+  <text x="460" y="445" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8855dd">Execute</text>
+  <text x="460" y="460" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8855dd">actions</text>
+  <text x="460" y="477" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8855dd">with tools</text>
+  <!-- Tool icon -->
+  <rect x="425" y="410" width="16" height="16" fill="none" stroke="#8855dd" stroke-width="1" />
+  <line x1="429" y1="414" x2="437" y2="414" stroke="#8855dd" stroke-width="1" />
+  <line x1="429" y1="418" x2="437" y2="418" stroke="#8855dd" stroke-width="1" />
+  <line x1="429" y1="422" x2="437" y2="422" stroke="#8855dd" stroke-width="1" />
+  
+  <!-- Reflection -->
+  <text x="580" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8855dd">Reflection</text>
+  
+  <!-- Reflect on actions -->
+  <rect x="540" y="405" width="80" height="80" rx="5" ry="5" fill="white" stroke="#8855dd" stroke-width="1.5" />
+  <text x="580" y="445" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8855dd">Reflect on</text>
+  <text x="580" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8855dd">results of</text>
+  <text x="580" y="477" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8855dd">actions</text>
+  <!-- Reflection icon -->
+  <circle cx="553" cy="420" r="8" fill="none" stroke="#8855dd" stroke-width="1" />
+  <path d="M550,420 L556,420 M553,417 L553,423" stroke="#8855dd" stroke-width="1" />
+  
+  <!-- Response -->
+  <rect x="730" y="425" width="100" height="60" rx="10" ry="10" fill="white" stroke="#8855dd" stroke-width="1.5" />
+  <path d="M820,485 L830,505 L810,485 Z" fill="white" stroke="#8855dd" stroke-width="1.5" />
+  <text x="780" y="460" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8855dd">Response</text>
+  
+  <!-- Result labels -->
+  <rect x="650" y="415" width="60" height="25" rx="12" ry="12" fill="#4caf50" stroke="none">
+    <animate attributeName="fill" values="#4caf50;#66bb6a;#4caf50" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <text x="680" y="432" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Result ok</text>
+  
+  <rect x="425" y="495" width="90" height="25" rx="12" ry="12" fill="#e74c3c" stroke="none">
+    <animate attributeName="fill" values="#e74c3c;#ff6b6b;#e74c3c" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <text x="470" y="512" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Result not ok</text>
+  
+  <!-- Arrows for Agentic Workflow -->
+  <line x1="220" y1="455" x2="300" y2="455" stroke="#8855dd" stroke-width="2" marker-end="url(#arrowhead-purple)" />
+  <line x1="380" y1="455" x2="420" y2="455" stroke="#8855dd" stroke-width="2" marker-end="url(#arrowhead-purple)" />
+  <line x1="500" y1="455" x2="540" y2="455" stroke="#8855dd" stroke-width="2" marker-end="url(#arrowhead-purple)" />
+  <line x1="620" y1="455" x2="730" y2="455" stroke="#8855dd" stroke-width="2" marker-end="url(#arrowhead-purple)" />
+  
+  <!-- Return path from Reflection to Planning -->
+  <use href="#returnPath" />
+  <polygon points="335,495 340,485 345,495" fill="#e74c3c">
+    <animate attributeName="fill" values="#e74c3c;#ff6b6b;#e74c3c" dur="2s" repeatCount="indefinite" />
+  </polygon>  
+  <use href="#returnPath2" />
+  
+  <!-- Animated elements -->
+  <!-- Data flow dots for Automated workflow -->
+  <circle class="data-flow" cx="240" cy="100" r="3" fill="#333333">
+    <animate attributeName="cx" values="220;280" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle class="data-flow" cx="435" cy="100" r="3" fill="#333333">
+    <animate attributeName="cx" values="400;440" dur="2s" repeatCount="indefinite" begin="0.2s" />
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0.2s" />
+  </circle>
+  
+  <circle class="data-flow" cx="500" cy="100" r="3" fill="#333333">
+    <animate attributeName="cx" values="500;550" dur="2s" repeatCount="indefinite" begin="0.4s" />
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0.4s" />
+  </circle>
+  
+  <circle class="data-flow" cx="690" cy="100" r="3" fill="#333333">
+    <animate attributeName="cx" values="650;730" dur="2s" repeatCount="indefinite" begin="0.6s" />
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0.6s" />
+  </circle>
+  
+  <!-- Data flow dots for AI workflow -->
+  <circle class="data-flow" cx="270" cy="255" r="3" fill="#0077cc">
+    <animate attributeName="cx" values="220;340" dur="2.5s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle class="data-flow" cx="600" cy="255" r="3" fill="#0077cc">
+    <animate attributeName="cx" values="520;730" dur="3s" repeatCount="indefinite" begin="0.3s" />
+    <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" begin="0.3s" />
+  </circle>
+  
+  <!-- Data flow dots for Agentic workflow -->
+  <circle class="data-flow" cx="260" cy="455" r="3" fill="#8855dd">
+    <animate attributeName="cx" values="220;300" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle class="data-flow" cx="400" cy="455" r="3" fill="#8855dd">
+    <animate attributeName="cx" values="380;420" dur="1.5s" repeatCount="indefinite" begin="0.2s" />
+    <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" begin="0.2s" />
+  </circle>
+  
+  <circle class="data-flow" cx="520" cy="455" r="3" fill="#8855dd">
+    <animate attributeName="cx" values="500;540" dur="1.5s" repeatCount="indefinite" begin="0.4s" />
+    <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" begin="0.4s" />
+  </circle>
+  
+  <circle class="data-flow" cx="675" cy="455" r="3" fill="#8855dd">
+    <animate attributeName="cx" values="620;730" dur="2s" repeatCount="indefinite" begin="0.6s" />
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0.6s" />
+  </circle>
+  
+  <!-- Animated data flow on return path -->
+  <!-- <circle class="data-flow" cx="480" cy="430" r="3" fill="#e74c3c">
+    <animate attributeName="cx" values="480;400" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="430;360" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+  </circle> -->
+</svg>

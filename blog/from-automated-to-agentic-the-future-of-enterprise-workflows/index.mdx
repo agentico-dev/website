@@ -1,0 +1,192 @@
+---
+title: "From Automated to Agentic: The Next Frontier in Enterprise Workflows"
+description: "Understand the key differences between automated, AI-powered, and agentic workflows. Learn when it makes sense to move to the next stage and how to implement it effectively."
+authors: [adrian]
+tags: [ai, agentic, workflows]
+keywords: [ai, agentic, workflows, automation, enterprise]
+image: ./ai-workflow-diagrams.svg
+---
+import AIWorkflowDiagram from './ai-workflow-diagrams.svg';
+
+Workflows power every business process, from approving vacation requests to orchestrating complex supply chains. As enterprises grow, their workflows must evolve. We've seen a big shift from simple rule-based systems to AI-driven solutions. Now, a new layer is emerging: "agentic" workflows, where AI not only gives insights but also acts on them. 
+
+Let's explore three key stages:
+
+<AIWorkflowDiagram width="90%" alt="AI Workflow Diagram" />
+
+<!-- truncate -->
+
+1. **Automated workflows (rule-based, non-AI).**
+2. **AI workflows (non-agentic).**
+3. **Agentic workflows (fully AI-driven).**
+
+We'll see what each stage looks like, when it makes sense to move from one to the next, and how to do it without losing your mind—or your budget.
+
+---
+
+## 1- Automated Workflows (Rule-Based, Non-AI)
+
+### What they are
+
+Automated workflows rely on predefined rules. Think of it like a flowchart that never changes unless you manually update it. They typically use Business Process Model and Notation ([BPMN](https://www.omg.org/spec/BPMN/2.0.2/About-BPMN)) and process engines such as [Camunda](https://page.camunda.com/wp-camunda-compared-to-alternatives) or other workflow automation platforms. These solutions are stable, predictable, and easy to audit. One advantage is that non-technical users can often manage them, because of the [visual representation](https://rebelion.la/visualizing-ideas-and-designs-with-diagram-as-code-tools) of the process, which is easy to understand. You can [integrate them within your existing systems](https://bpmn.io/toolkit/bpmn-js/), like CRMs or ERPs.
+
+## Real-life example
+
+[Workflows are popular in finance, eCommerce](https://rebelion.la/experience-the-power-of-workflow-engines-in-kubernetes#heading-the-popularity-of-workflows-in-banking-ecommerce-and-beyond), healthcare, logistics, HR, customer service, well, everywhere! They are used to automate repetitive tasks, such as sending emails, updating records, or generating reports. For example, in a loan application system:
+
+- The system checks if the applicant's credit score is above a certain threshold.
+- If yes, it sends an automated email approval.
+- If no, it flags the case for manual review.  
+
+No machine learning or advanced AI is needed. Everything is based on "if-this-then-that" logic.
+
+## Key benefits
+
+- **Reliability:** You know exactly how the system will behave.  
+- **Clarity:** Every step is documented. You can easily track the process flow.  
+- **Simplicity:** Anyone who understands BPMN or standard workflow logic can manage it.  
+
+### Drawbacks:
+
+- **Rigid:** Any new rule requires code or configuration changes.  
+- **Limited intelligence:** The system can't learn from data or adapt on its own.  
+- **Maintenance overhead:** As your process grows in complexity, so do the rules.
+
+---
+
+## 2- AI Workflows (Non-Agentic)
+
+## What they are
+
+AI workflows introduce machine learning or data-driven decision-making into the process. However, the AI is mostly giving insights or predictions, not making final decisions on its own. Human approval or further system logic is still required.
+
+## Real-life example
+
+Returning to our loan system:
+- An AI model scores each application for risk based on a variety of data points (income, credit history, spending patterns).  
+- The workflow engine (like Camunda) still routes the application, but now the route can change based on the AI's risk score.  
+- If the AI score is high-risk, the application automatically goes to a specialist. If it's low-risk, the system continues with automated approval steps.  
+
+## Key benefits
+
+- **Smarter decisions:** AI brings predictive power.  
+- **Reduced manual checks:** The system flags edge cases.  
+- **More adaptable:** AI models can be retrained as data changes.  
+
+## Drawbacks
+
+- **Complexity:** You now have to manage data pipelines, model training, and integration with your workflow tool.  
+- **Still partially manual:** You might still need human oversight to approve or override AI decisions.  
+- **Possible bias:** If your training data is skewed, your model could make unfair or inaccurate predictions.
+
+---
+
+## 3- Agentic Workflows (Fully AI-Driven)
+
+## What they are
+
+Agentic workflows go a step further. The AI "agent" can plan, execute actions, and reflect on results. Instead of just scoring or suggesting, it's capable of taking the next step in the process automatically. This often involves large language models (LLMs) or advanced algorithms that can reason about tasks, break them down, and adapt.
+
+## Real-life example
+
+Think of an AI-driven underwriting system:
+- The AI agent collects data from multiple sources, from bank statements to social media (if allowed).  
+- It decides whether an application should be fast-tracked, flagged, or declined—without waiting for human input.  
+- It monitors performance. If it sees an unusual spike in defaults, it re-examines its strategy, updates its rules, and even requests new data to improve accuracy.
+
+## Key benefits
+
+- **End-to-end automation:** Minimal human intervention is needed for normal cases.  
+- **Continuous learning:** The agent improves its decisions over time.  
+- **Adaptive:** If new information comes in, the agent can modify its plan and respond to unexpected events.  
+
+## Drawbacks
+
+- **High complexity:** Building and maintaining an agentic workflow requires advanced AI expertise.  
+- **Risk management:** When the AI acts independently, errors or biases can scale quickly.  
+- **Regulatory hurdles:** In industries like finance or healthcare, letting AI run end-to-end might clash with compliance rules.
+
+---
+
+## When to Move from Automated to AI to Agentic
+
+## 1. Automated (Rule-Based) → AI (Non-Agentic)
+
+- **When to do it:**
+  - You have large data sets.  
+  - You want to reduce manual tasks and errors.  
+  - Your rules keep changing, and you need something more flexible.  
+- **When to hold off:**
+  - You have no reliable data or your processes are still too simple to justify the investment.  
+
+## 2. AI (Non-Agentic) → Agentic (Fully AI-Driven)
+
+- **When to do it:**
+  - You need real-time decisions without human bottlenecks.  
+  - Your AI models are already trusted and well-tested.  
+  - Your regulatory environment allows for automated decision-making.  
+- **When to hold off:**
+  - You're not ready for advanced governance, auditing, and compliance.  
+  - The cost of mistakes is too high (e.g., health diagnoses, legal matters).  
+
+---
+
+## Steps to Evolve Your Workflow Approach
+
+1. **Start with your pain points:**
+   Look at where your rule-based system is struggling. Maybe you have too many manual reviews or too many exceptions. This is a sign you could benefit from AI.  
+
+2. **Assess your data readiness:**
+   - **Data quality:** Garbage in, garbage out. Ensure your data is accurate and complete.  
+   - **Data quantity:** For machine learning, more data is often better.  
+   - **Security & compliance:** Check how you collect, store, and protect data.  
+
+3. **Pick the right tool:**
+   - **Rule-based solutions:** BPMN engines like [Camunda](https://www.gartner.com/reviews/market/business-process-automation-tools/vendor/camunda/product/camunda/alternatives) can help you start simple.  
+   - **AI add-ons:** Many workflow tools let you plug in AI services—like a credit risk scoring model—without rebuilding from scratch.  
+   - **Agentic frameworks:** If you go fully agentic, you may need a specialized platform that supports advanced AI planning, reflection, and self-improvement.  
+
+4. **Run a pilot project:**
+   - **Choose a low-risk use case:** Don't start with mission-critical tasks.  
+   - **Measure impact:** Evaluate speed, accuracy, and cost savings.  
+   - **Refine your approach:** Tweak rules, retrain models, or adjust the AI's autonomy as needed.  
+
+5. **Scale up gradually:**
+   - **Train your team:** Everyone from business analysts to developers should understand how the AI works.  
+   - **Implement governance:** Define clear escalation paths, fallback rules, and auditing.  
+   - **Monitor performance:** Use dashboards and alerts to catch anomalies early.  
+
+6. **Review & repeat:**
+   - **Regular updates:** AI models can degrade over time if the data environment changes.  
+   - **Continuous improvement:** If agentic workflows work well for one department, see if they can help another.  
+
+---
+
+## Balancing Innovation and Practicality
+
+## The big question
+ Is it always worth going fully agentic? Not always. Many businesses find a sweet spot in AI-enhanced workflows that still have human checks at critical points. Others, especially in fast-moving tech fields, see big wins with agentic systems.  
+
+## Rule of thumb
+
+- **Go agentic** if you need real-time decisions and can handle the complexity.  
+- **Stick to AI (non-agentic)** if your industry is regulated or you prefer human control.  
+- **Remain automated (rule-based)** if your processes are straightforward and stable.  
+
+---
+
+## The Road Ahead
+
+Automated, AI, or agentic—each stage of workflow evolution offers different levels of efficiency, intelligence, and flexibility. It's not about jumping to the fanciest technology just because it's there. It's about picking the approach that matches your current business needs, data maturity, and risk tolerance.
+
+## Bottom line
+
+- **Start small:** Don't boil the ocean.  
+- **Evolve as needed:** Add AI in places where it truly helps.  
+- **Aim for agentic only if it makes sense:** Because while a fully autonomous workflow sounds cool, it's not always the best fit for every enterprise.  
+
+At the end of the day, it's your customers, employees, and bottom line that matter most. Think of your workflow strategy like a staircase. Each step—automated, AI, agentic—has its own challenges and rewards. When you climb with care, you'll end up with a system that's not only powerful but also practical. And that's the real win.
+
+What are your thoughts on the evolution of workflows? Are you ready to take the leap into agentic workflows, or do you prefer to keep things simple? Let us know in the comments!
+
+Go Rebels! ✊🏻
