@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Definitions -->
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Section gradients -->
+    <linearGradient id="input-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    
+    <linearGradient id="process-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#F5BE1B" />
+      <stop offset="100%" stop-color="#FBfF54" />
+    </linearGradient>
+    
+    <linearGradient id="output-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <!-- Glow effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Animation for connectors -->
+    <linearGradient id="animatedDash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4cc9f0" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="white" stop-opacity="1" />
+      <stop offset="100%" stop-color="#4cc9f0" stop-opacity="0.2" />
+      <animate attributeName="x1" from="0%" to="100%" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="100%" to="200%" dur="3s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Grid pattern -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <g id="grid-lines">
+      <!-- Horizontal lines -->
+      <line x1="0" y1="100" x2="800" y2="100" >
+      
+        <animate attributeName="stroke-dasharray" values="1,0; 2,1; 3,2; 4,3; 5,3; 6,2; 7,1; 8,0"
+          dur="1s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="200" x2="800" y2="200" >
+      
+        <animate attributeName="stroke-dasharray" values="1,0; 2,1; 3,2; 4,3; 5,3; 6,2; 7,1; 8,0"
+          dur="1s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="300" x2="800" y2="300" >
+      
+        <animate attributeName="stroke-dasharray" values="1,0; 2,1; 3,2; 4,3; 5,3; 6,2; 7,1; 8,0"
+          dur="1s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="400" x2="800" y2="400" >
+      
+        <animate attributeName="stroke-dasharray" values="1,0; 2,1; 3,2; 4,3; 5,3; 6,2; 7,1; 8,0"
+          dur="1s" repeatCount="indefinite" />
+      </line>
+      <line x1="0" y1="500" x2="800" y2="500" >
+      
+        <animate attributeName="stroke-dasharray" values="1,0; 2,1; 3,2; 4,3; 5,3; 6,2; 7,1; 8,0"
+          dur="1s" repeatCount="indefinite" />
+      </line>
+      
+      <!-- Vertical lines -->
+      <line x1="100" y1="0" x2="100" y2="600" />
+      <line x1="200" y1="0" x2="200" y2="600" />
+      <line x1="300" y1="0" x2="300" y2="600" />
+      <line x1="400" y1="0" x2="400" y2="600" />
+      <line x1="500" y1="0" x2="500" y2="600" />
+      <line x1="600" y1="0" x2="600" y2="600" />
+      <line x1="700" y1="0" x2="700" y2="600" />
+    </g>
+  </g>
+
+  <!-- Main title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">From API Specs to MCP Server in 3 Steps</text>
+  
+  <!-- Progress bar container -->
+  <rect x="150" y="100" width="500" height="30" rx="15" fill="rgba(255,255,255,0.1)" />
+  
+  <!-- Progress sections -->
+  <rect x="150" y="100" width="50" height="30" rx="15" fill="url(#input-gradient)" />
+  <rect x="200" y="100" width="400" height="30" rx="0" fill="url(#process-gradient)" stroke="url(#animatedDash)" stroke-dasharray="1,3; 2,2; 3,1; 4,0; 3,1; 2,2; 1,3"  />
+  <rect x="600" y="100" width="50" height="30" rx="15" fill="url(#output-gradient)" />
+  
+  <!-- Percentage labels -->
+  <text x="175" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">10%</text>
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">80%</text>
+  <text x="625" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">10%</text>
+
+  <!-- Step 1: API Specs -->
+  <g transform="translate(175, 200)">
+    <rect x="-80" y="-50" width="160" height="100" rx="10" fill="rgba(14,165,233,0.2)" stroke="url(#input-gradient)" stroke-width="2" />
+    
+    <!-- API Spec icon -->
+    <g transform="translate(0, -25)">
+      <rect x="-30" y="-15" width="60" height="30" rx="5" fill="none" stroke="#38BDF8" stroke-width="2" />
+      <line x1="-20" y1="-5" x2="20" y2="-5" stroke="#38BDF8" stroke-width="2" />
+      <line x1="-20" y1="5" x2="10" y2="5" stroke="#38BDF8" stroke-width="2" />
+    </g>
+    
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Step 1: API Specs</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle" filter="url(#glow)">OAS or gRPC IDL</text>
+  </g>
+  
+  <!-- Step 2: Agentico -->
+  <g transform="translate(400, 300)">
+    <rect x="-150" y="-75" width="300" height="150" rx="10" fill="rgba(245,158,11,0.2)" stroke="url(#process-gradient)" stroke-width="2" filter="url(#glow)"/>
+    
+    <!-- Agentico magic icon -->
+    <g transform="translate(0, -40)">
+      <circle cx="0" cy="0" r="25" fill="none" stroke="#FBBF24" stroke-width="2" />
+      <path d="M-15,-10 L15,10 M-15,10 L15,-10" stroke="#FBBF24" stroke-width="2" />
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#FBBF24" stroke-width="2" />
+    </g>
+    
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Step 2: AI Generation</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Automated MCP Server Generation</text>
+    <text x="0" y="55" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">(80% of the work done for you)</text>
+  </g>
+  
+  <!-- Step 3: Fine-tuning -->
+  <g transform="translate(625, 400)">
+    <rect x="-80" y="-50" width="160" height="100" rx="10" fill="rgba(16,185,129,0.2)" stroke="url(#output-gradient)" stroke-width="2" />
+    
+    <!-- Refinement icon -->
+    <g transform="translate(0, -25)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#34D399" stroke-width="2" />
+      <path d="M0,-10 L0,10 M-10,0 L10,0" stroke="#34D399" stroke-width="2" />
+    </g>
+    
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Step 3: Fine-tune</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">Final customizations</text>
+  </g>
+  
+  <!-- Connector arrows -->
+  <g stroke-width="2" fill="none">
+    <!-- Step 1 to Step 2 -->
+    <path d="M175,250 C175,275 200,275 250,300 L250,300" stroke="url(#animatedDash)" stroke-dasharray="1,3; 2,2; 3,1; 4,0; 3,1; 2,2; 1,3" />
+    <polygon points="250,300 245,293 243,303" fill="white" />
+    
+    <!-- Step 2 to Step 3 -->
+    <path d="M400,375 C400,400 525,400 545,405" stroke="url(#animatedDash)" stroke-dasharray="1,3; 2,2; 3,1; 4,0; 3,1; 2,2; 1,3" />
+    <polygon points="545,405 536,408 540,400" fill="white" />
+  </g>
+  
+  <!-- Business value callouts -->
+  <g transform="translate(175, 500)">
+    <rect x="-125" y="-40" width="250" height="80" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">For Technical Teams</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">Start with familiar API specs</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">Skip boilerplate implementation</text>
+  </g>
+  
+  <g transform="translate(625, 500)">
+    <rect x="-125" y="-40" width="250" height="80" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">For Business Leaders</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">Accelerate development timeline</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">Reduce engineering costs by 80%</text>
+  </g>
+  
+  <!-- Bottom tagline -->
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Agentico: Transform API Specs into MCP Servers with Minimal Effort</text>
+</svg>
