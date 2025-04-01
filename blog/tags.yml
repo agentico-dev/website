@@ -8,6 +8,11 @@ mcp:
   permalink: /mcp
   description: Model Context Protolol (MCP) is a protocol that allows AI models to communicate with each other.
 
+mcp-server:
+  label: MCP Server
+  permalink: /mcp-server
+  description: The MCP server is a server that hosts the Model Context Protocol (MCP) Tools that add context to language models via MCP.
+
 ai:
   label: AI
   permalink: /ai
