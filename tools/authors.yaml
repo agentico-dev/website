@@ -1,6 +1,0 @@
-larebelion:
-  name: La Rebelion Labs
-  url: https://rebelion.la
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/la-rebelion'
