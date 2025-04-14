@@ -1,0 +1,113 @@
+---
+title: "The Future of Agentic Workflows Starts with MCP Intent-Based Server"
+description: "Introducing the MCP Intent-Based Server: A new way to dynamically manage MCP servers and tools."
+authors: [adrian]
+tags: [ai, agentic, mcp]
+keywords: [ai, agentic, mcp, ai development, ai agents]
+image: ./mcp-intent-server-diagram-v2.svg
+date: 2025-04-14
+---
+import MCPIntentServerDiagram from './mcp-intent-server-diagram-v2.svg';
+
+🔥 **What if managing AI agents was as simple as deploying Kubernetes?**
+
+We're launching the **Alpha version** and inviting early adopters to shape the next evolution in *context-driven AI infrastructure*.
+
+*MCP Intent-Based Server: Simplifying Context for Complex AI Integrations*
+
+<MCPIntentServerDiagram alt="MCP Intent Based Server and Tools" width="75%" center />
+
+<!-- truncate -->
+
+---
+
+## 💡 Why This Matters
+
+Let's face it—enterprise AI integrations are messy. Context gets lost. Tools don't talk. Developers waste hours wiring things together, only for it to break silently in production.
+
+**Agentico is building a new foundation**, not another abstraction.
+
+We've launched the **MCP Intent-Based Server (Alpha)**:  
+A dynamic, declarative server for managing the **tools, transports, and context** dynamically in AI systems—driven by one simple truth:
+
+> 🧠 *The intent should drive the system—not the other way around.*
+
+---
+
+## 🔍 What's Under the Hood?
+
+Our alpha release is powered by 3 breakthrough concepts:
+
+1️⃣ **Kubernetes-style Manifests**  
+Declare what you want (tools, prompts, connections) in a simple `server.yaml`. The server reconciles actual vs desired state—automatically.
+
+2️⃣ **Temporal-like Paths for Tools**  
+Structure your workspace like Temporal [activities and workflows](https://docs.temporal.io/develop/typescript/core-application). Just define `toolsPaths`, and the server loads, manages, and adapts to what you define—dynamically.
+
+3️⃣ **Java Reflection-like Tool Injection**  
+Create new tools on the fly from tool names in your manifest. No need to touch core server code. It's plug-and-play for AI capabilities.
+
+> ❓If Kubernetes abstracted compute through intent, what would it look like to do the same for **MCP Servers**?
+
+We're betting this is it.
+
+---
+
+## 🎯 Who Is This For?
+
+Whether you're:
+
+- A **platform engineer** building internal AI services,
+- A **data scientist** wanting plug-and-play tooling,
+- Or a **startup** pushing toward agentic systems in production,
+
+**This toolkit is your playground**.
+
+We've abstracted the chaos, not the control.
+
+---
+
+## 🚀 Alpha Features You Can Use *Today*
+
+- ☑️ Declarative server setup via `server.yaml`
+- ☑️ Dynamic tool creation & registration
+- ☑️ Transport flexibility (`stdio`, HTTP, custom)
+- ☑️ Support both [MCP](https://github.com/modelcontextprotocol/typescript-sdk#server) and standard [server](https://github.com/modelcontextprotocol/typescript-sdk#low-level-server) types. (The `McpServer` provides access to the server, but read-only access)
+- ☑️ Tool lifecycle management: register/unregister on manifest change
+- ☑️ Built-in logging for debugging
+
+---
+
+## 📬 Want Early Access?
+
+Join the alpha program, contribute ideas, and shape the future of **Model Context Protocol** in real enterprise scenarios.
+
+🛠 [GitHub Repo with example](https://github.com/agentico-dev/mcp)  
+📩 [Subscribe for updates](https://go.rebelion.la/agentico-news)  
+🎥 [Follow us on LinkedIn](https://www.linkedin.com/company/larebelion-labs/) and [Adrian's](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=adrianescutia)
+
+🧢 [La Rebelion Merch](https://go.rebelion.la/merch).
+
+## 📢 Our different blogs:
+
+- [La Rebelion](https://rebelion.la) - Topics around Cloud Native, Kubernetes, and DevOps.
+- [Agentico](https://agentico.dev) - Topics around Agentic workflows, MCP, and AI.
+- [Intent Based AI](https://intent-based.ai) - The specs and the tools to help you with Intent Based AI.
+- [MCP](https://mcp.com.ai) - Our hub for the Model Context Protocol (MCP) and the tools we are building around it.
+
+---
+
+## 🧭 Looking Ahead
+
+We're already building:
+
+- Multi-server support for scale-out deployments
+- Telemetry, observability & versioning
+- Native gRPC + custom transports
+- Integrated rollback strategies
+
+This is just Day 1.
+
+We want to hear from you. What do you need? What are your pain points? How can we make this even better?
+
+Go Rebels! ✊🏽
