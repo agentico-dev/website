@@ -1,0 +1,74 @@
+---
+sidebar_position: 2
+title: Intent-Based MCP
+description: Intent-Based, a declarative way used to define the tools and their interactions
+keywords: [MCP, Intent-Based, tools, interactions]
+---
+
+import MCPIntentBasedDiagram from './mcp-intent-server-diagram-v2.svg';
+
+## What is Intent-Based MCP?
+
+The **Intent-Based** approach is a declarative way to define the tools and their interactions. It allows you to specify the desired behavior of the tools without having to worry about the underlying implementation details. This makes it easier to create complex workflows and **integrate different tools dynamically**.
+
+> Idea taken from the Kubernetes approach, where you define the desired state of the system and let the system figure out how to achieve that state.
+
+<MCPIntentBasedDiagram
+  alt="Intent-Based MCP"
+  style={{ width: '70%', height: 'auto', margin: '0 auto', display: 'block' }}
+/>
+
+<br />
+The **Intent-Based** approach is based on the idea of defining the intent of business processes and workflows, rather than coding them in a procedural way. This allows for a more flexible and extensible way to manage and implement tools, resources, and prompts.
+
+### Example
+
+The following example demonstrates how to create a simple tool that reverses a string and another tool that converts the string to uppercase. The `server.yaml` file defines the intent of the tools and their interactions.
+
+For simplicity, we show only the relevant parts of the intent-based server. The full specification can be found in the [Intent-Based AI](https://intent-based.ai/) website.
+
+```yaml
+tools:
+  - name: reverse
+    description: Reverses the input string
+    schema:
+      type: object
+      properties:
+        input:
+          type: string
+          description: The string to reverse
+
+  - name: uppercase
+    description: Converts the input string to uppercase
+    schema:
+      type: object
+      properties:
+        input:
+          type: string
+          description: The string to convert to uppercase
+```
+
+The `server.yaml` file specifies the tools and their schemas, the business logic is independent of the server definition. Separating the intent from the implementation allows for a more modular and organized approach to managing the server environment.
+
+---
+
+## Intent-Based AI principles
+
+The project is inspired by three great **principles**:
+
+1. **Intent-Based Management**: Taken from the **Kubernetes Object Resource model**, where the desired state of the system is defined in a **manifest file** (server.yaml), and the system automatically reconciles the actual state with the desired state; "describing what users want Kubernetes to do, rather than how to make it happen". This allows for a more efficient and automated way of managing server capabilities, reducing the need for manual intervention and configuration. 
+   - The manifest file is a YAML file (server.yaml) that describes the desired state of the server capabilities, including the tools and their configurations. The server uses this manifest file to create and manage the tools and the transport connection (also, prompts and resources).
+   - The server uses a [Kubernetes-like](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/) approach to define the desired state of the system through a manifest file. This allows for a more declarative way of managing the server environment, making it easier to understand and maintain.
+2. **Temporal Workflow**: Temporal uses [`workflowsPaths`](https://typescript.temporal.io/api/interfaces/worker.WorkerOptions/#workflowspath) to define the path where the workflows are located. This allows for a more organized and modular approach to managing workflows, making it easier to understand and maintain the server environment. In MCP Intent Based Server, we use `toolsPaths` to define the path where the tools are located. 
+3. **Java Reflection**: The server uses [Java reflection](https://www.oracle.com/technical-resources/articles/java/javareflection.html)-like to dynamically create instances of tools based on the intent defined in the manifest file. This allows for a more flexible and adaptable server environment, as new tools can be added without modifying the server code. The server uses reflection to create instances of tools based on their class names, allowing for a more dynamic and extensible server environment.
+
+## The intent drives dynamism
+
+The server is designed to be driven by the intent defined in a manifest file, allowing for a more declarative approach to managing the server environment.
+   1. **Dynamic Tool Creation**: The server can dynamically create tools based on the intent defined in the manifest file, allowing for a more flexible and adaptable server environment.
+   2. **Transport Connection Management**: The server supports multiple transport connections, allowing for a more versatile and extensible server environment.
+   3. **Capability Management**: The server can manage dynamic configuration, allowing for a more modular and organized approach to managing the server environment.
+   4. **Telemetry and Monitoring**: The server will support telemetry and monitoring to enhance observability and performance tracking.
+   5. **Error Handling and Logging**: The server includes error handling and logging capabilities to improve debugging and troubleshooting.
+   6. **Tool Registration and Invocation**: The server includes a mechanism for registering and invoking tools, allowing for a more organized and modular approach to managing the server environment.
+   7. **Unregistering Tools**: The server includes a mechanism for unregistering tools from the registry, allowing for a more organized and modular approach to managing the server environment.

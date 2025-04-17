@@ -1,0 +1,8 @@
+{
+  "label": "Updates",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Updates and changelogs for the latest features and improvements in the project.",
+  }
+}
