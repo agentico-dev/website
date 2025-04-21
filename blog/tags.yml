@@ -62,3 +62,8 @@ microservices:
   label: Microservices
   permalink: /microservices
   description: Microservices is an architectural style that structures an application as a collection of small, autonomous services.
+
+intent-based:
+  label: Intent-based
+  permalink: /intent-based
+  description: Intent-based AI is a type of AI that focuses on understanding the intent behind user actions and automating tasks based on that intent.
